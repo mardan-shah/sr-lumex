@@ -11,7 +11,7 @@ export default function ResidentialPage() {
       <section className="relative py-20 md:py-28">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/placeholder.svg?height=1080&width=1920&text=Residential%20Smart%20Glass"
+            src="/placeholder.svg?height=1080&width=1920&text=Residential%20LED%20Film"
             alt="Residential Smart Glass"
             fill
             className="object-cover"
@@ -21,10 +21,10 @@ export default function ResidentialPage() {
         <div className="container relative z-10">
           <div className="max-w-3xl space-y-6">
             <Badge className="bg-[#007BFF] hover:bg-[#007BFF]/90">Residential Solutions</Badge>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white">Smart Glass for Modern Homes</h1>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white">LED Film Screens for Modern Homes</h1>
             <p className="text-xl text-white/90">
-              Transform your living spaces with intelligent glass solutions that enhance privacy, comfort, and energy
-              efficiency while maintaining elegant aesthetics.
+              Transform your living spaces with sleek digital glass for ambient visuals, home automation displays, or
+              artistic projections on windows and partitions.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <Button size="lg" className="bg-[#007BFF] hover:bg-[#007BFF]/90">
@@ -69,23 +69,23 @@ export default function ResidentialPage() {
                   />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold text-[#121212] dark:text-white">Privacy On Demand</h3>
+              <h3 className="text-xl font-bold text-[#121212] dark:text-white">Dynamic Home Displays</h3>
               <p className="mt-2 text-muted-foreground">
-                Switch from transparent to opaque instantly, eliminating the need for blinds or curtains while
-                maintaining clean, modern aesthetics.
+                Transform windows and glass partitions into digital canvases for ambient visuals, digital art, or smart
+                home displays.
               </p>
               <ul className="mt-4 space-y-2">
                 <li className="flex items-start gap-2">
                   <Check className="h-5 w-5 text-[#007BFF] flex-shrink-0 mt-0.5" />
-                  <span>Instant privacy for bathrooms, bedrooms, and home offices</span>
+                  <span>Create immersive ambient experiences</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <Check className="h-5 w-5 text-[#007BFF] flex-shrink-0 mt-0.5" />
-                  <span>Maintain views when desired, privacy when needed</span>
+                  <span>Display digital art and personalized content</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <Check className="h-5 w-5 text-[#007BFF] flex-shrink-0 mt-0.5" />
-                  <span>No mechanical parts or maintenance required</span>
+                  <span>Integrate with smart home systems for dynamic displays</span>
                 </li>
               </ul>
             </div>
@@ -108,21 +108,21 @@ export default function ResidentialPage() {
               </div>
               <h3 className="text-xl font-bold text-[#121212] dark:text-white">Energy Efficiency</h3>
               <p className="mt-2 text-muted-foreground">
-                Control light transmission and heat gain to reduce energy costs and maintain comfortable indoor
-                temperatures year-round.
+                Reduce energy consumption with low-power LED technology and customizable brightness settings for optimal
+                performance.
               </p>
               <ul className="mt-4 space-y-2">
                 <li className="flex items-start gap-2">
                   <Check className="h-5 w-5 text-[#50C878] flex-shrink-0 mt-0.5" />
-                  <span>Reduce cooling costs by blocking heat in summer</span>
+                  <span>Low power consumption for sustainable displays</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <Check className="h-5 w-5 text-[#50C878] flex-shrink-0 mt-0.5" />
-                  <span>Lower lighting costs with natural light control</span>
+                  <span>Adjustable brightness to minimize energy usage</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <Check className="h-5 w-5 text-[#50C878] flex-shrink-0 mt-0.5" />
-                  <span>Protect furniture and flooring from UV damage</span>
+                  <span>Long lifespan for reduced replacement costs</span>
                 </li>
               </ul>
             </div>
@@ -143,23 +143,23 @@ export default function ResidentialPage() {
                   />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold text-[#121212] dark:text-white">Modern Aesthetics</h3>
+              <h3 className="text-xl font-bold text-[#121212] dark:text-white">Seamless Integration</h3>
               <p className="mt-2 text-muted-foreground">
-                Enhance your home's design with sleek, minimalist glass solutions that complement any architectural
-                style.
+                Integrate LED film seamlessly into your home design, creating stunning visual effects without
+                compromising aesthetics.
               </p>
               <ul className="mt-4 space-y-2">
                 <li className="flex items-start gap-2">
                   <Check className="h-5 w-5 text-[#007BFF] flex-shrink-0 mt-0.5" />
-                  <span>Clean, contemporary look without curtains or blinds</span>
+                  <span>Discreet and transparent when not in use</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <Check className="h-5 w-5 text-[#007BFF] flex-shrink-0 mt-0.5" />
-                  <span>Available in various tints and custom sizes</span>
+                  <span>Customizable sizes and shapes for any application</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <Check className="h-5 w-5 text-[#007BFF] flex-shrink-0 mt-0.5" />
-                  <span>Seamless integration with smart home systems</span>
+                  <span>Easy to install and control with smart home systems</span>
                 </li>
               </ul>
             </div>
@@ -227,9 +227,9 @@ export default function ResidentialPage() {
                       1
                     </div>
                     <div>
-                      <h4 className="font-bold text-[#121212] dark:text-white">Bathroom Windows & Shower Enclosures</h4>
+                      <h4 className="font-bold text-[#121212] dark:text-white">Living Room Ambient Displays</h4>
                       <p className="text-muted-foreground">
-                        Instant privacy without sacrificing natural light or design aesthetics.
+                        Create immersive visual experiences with dynamic ambient displays.
                       </p>
                     </div>
                   </div>
@@ -238,9 +238,9 @@ export default function ResidentialPage() {
                       2
                     </div>
                     <div>
-                      <h4 className="font-bold text-[#121212] dark:text-white">Bedroom Windows</h4>
+                      <h4 className="font-bold text-[#121212] dark:text-white">Digital Art Installations</h4>
                       <p className="text-muted-foreground">
-                        Control light and privacy with the touch of a button or automated schedules.
+                        Showcase digital art and personalized content on glass surfaces.
                       </p>
                     </div>
                   </div>
@@ -249,9 +249,9 @@ export default function ResidentialPage() {
                       3
                     </div>
                     <div>
-                      <h4 className="font-bold text-[#121212] dark:text-white">Home Office Partitions</h4>
+                      <h4 className="font-bold text-[#121212] dark:text-white">Smart Home Control Interfaces</h4>
                       <p className="text-muted-foreground">
-                        Create flexible workspaces that can be open or private as needed.
+                        Integrate smart home controls directly into your glass surfaces.
                       </p>
                     </div>
                   </div>
@@ -262,9 +262,9 @@ export default function ResidentialPage() {
                       4
                     </div>
                     <div>
-                      <h4 className="font-bold text-[#121212] dark:text-white">Room Dividers</h4>
+                      <h4 className="font-bold text-[#121212] dark:text-white">Kitchen Information Displays</h4>
                       <p className="text-muted-foreground">
-                        Versatile partitions that can create separate spaces or open floor plans.
+                        Display recipes, news, and other information on kitchen glass.
                       </p>
                     </div>
                   </div>
@@ -273,10 +273,8 @@ export default function ResidentialPage() {
                       5
                     </div>
                     <div>
-                      <h4 className="font-bold text-[#121212] dark:text-white">Skylights</h4>
-                      <p className="text-muted-foreground">
-                        Control natural light and heat gain through roof windows and skylights.
-                      </p>
+                      <h4 className="font-bold text-[#121212] dark:text-white">Bedroom Mood Lighting</h4>
+                      <p className="text-muted-foreground">Create relaxing and immersive mood lighting in bedrooms.</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
@@ -284,10 +282,8 @@ export default function ResidentialPage() {
                       6
                     </div>
                     <div>
-                      <h4 className="font-bold text-[#121212] dark:text-white">Exterior Windows</h4>
-                      <p className="text-muted-foreground">
-                        Enhance privacy and energy efficiency for windows facing public areas.
-                      </p>
+                      <h4 className="font-bold text-[#121212] dark:text-white">Home Theater Enhancements</h4>
+                      <p className="text-muted-foreground">Enhance your home theater with dynamic visual effects.</p>
                     </div>
                   </div>
                 </div>
@@ -384,21 +380,21 @@ export default function ResidentialPage() {
             {[
               {
                 quote:
-                  "The smart glass in our master bathroom has been a game-changer. No more curtains to clean, and we can enjoy the view while maintaining complete privacy when needed.",
+                  "The LED film in our living room has transformed the space. We can display beautiful ambient visuals and even use it as a dynamic backdrop for movie nights.",
                 name: "Jennifer & David",
                 location: "Modern Home Renovation, California",
                 image: "/placeholder.svg?height=100&width=100&text=J&D",
               },
               {
                 quote:
-                  "We installed SR Lumex smart glass for our home office partition. It allows us to have an open concept when working together, but privacy during important video calls.",
+                  "We use the LED film in our kitchen to display recipes and control our smart home devices. It's a game-changer for convenience and aesthetics.",
                 name: "Michael T.",
                 location: "Home Office Upgrade, New York",
                 image: "/placeholder.svg?height=100&width=100&text=MT",
               },
               {
                 quote:
-                  "The energy savings have been substantial. Our south-facing windows used to make our living room unbearably hot in summer, but now we can control the heat and light perfectly.",
+                  "The digital art installations we created with SR Lumex LED film are stunning. They add a unique and modern touch to our home.",
                 name: "Sarah & James",
                 location: "Energy-Efficient Home, Texas",
                 image: "/placeholder.svg?height=100&width=100&text=S&J",

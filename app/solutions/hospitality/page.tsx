@@ -22,11 +22,11 @@ export default function HospitalityPage() {
           <div className="max-w-3xl space-y-6">
             <Badge className="bg-[#007BFF] hover:bg-[#007BFF]/90">Hospitality Solutions</Badge>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white">
-              Smart Glass for Luxury Hospitality
+              LED Film Screens for Luxury Hospitality
             </h1>
             <p className="text-xl text-white/90">
-              Elevate guest experiences with intelligent glass solutions that enhance privacy, comfort, and aesthetic
-              appeal in hotels, resorts, and restaurants.
+              Enhance guest experiences with immersive LED visuals in lobbies, spas, and rooms. Perfect for digital
+              ambiance, wayfinding, or branded messaging.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <Button size="lg" className="bg-[#007BFF] hover:bg-[#007BFF]/90">
@@ -72,22 +72,22 @@ export default function HospitalityPage() {
                   />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold text-[#121212] dark:text-white">Elegant Privacy</h3>
+              <h3 className="text-xl font-bold text-[#121212] dark:text-white">Guest Experience Enhancement</h3>
               <p className="mt-2 text-muted-foreground">
-                Provide guests with on-demand privacy without sacrificing natural light or design aesthetics.
+                Elevate guest experiences with dynamic digital displays that captivate and inform.
               </p>
               <ul className="mt-4 space-y-2">
                 <li className="flex items-start gap-2">
                   <Check className="h-5 w-5 text-[#007BFF] flex-shrink-0 mt-0.5" />
-                  <span>Bathroom privacy with the touch of a button</span>
+                  <span>Immersive visuals in lobbies and rooms</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <Check className="h-5 w-5 text-[#007BFF] flex-shrink-0 mt-0.5" />
-                  <span>Room dividers that can be transparent or opaque</span>
+                  <span>Dynamic content that adapts to guest preferences</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <Check className="h-5 w-5 text-[#007BFF] flex-shrink-0 mt-0.5" />
-                  <span>No curtains or blinds to clean or maintain</span>
+                  <span>Create a memorable and modern ambiance</span>
                 </li>
               </ul>
             </div>
@@ -108,23 +108,22 @@ export default function HospitalityPage() {
                   />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold text-[#121212] dark:text-white">Energy Efficiency</h3>
+              <h3 className="text-xl font-bold text-[#121212] dark:text-white">Branding & Ambiance</h3>
               <p className="mt-2 text-muted-foreground">
-                Reduce energy costs and create a more comfortable guest environment with intelligent light and heat
-                management.
+                Enhance your brand identity and create captivating ambiances with customizable LED film screens.
               </p>
               <ul className="mt-4 space-y-2">
                 <li className="flex items-start gap-2">
                   <Check className="h-5 w-5 text-[#50C878] flex-shrink-0 mt-0.5" />
-                  <span>Lower HVAC costs by controlling solar heat gain</span>
+                  <span>Showcase your brand with dynamic logos and visuals</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <Check className="h-5 w-5 text-[#50C878] flex-shrink-0 mt-0.5" />
-                  <span>Reduce lighting costs with natural light control</span>
+                  <span>Create immersive environments in spas and lobbies</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <Check className="h-5 w-5 text-[#50C878] flex-shrink-0 mt-0.5" />
-                  <span>Protect furnishings from UV damage</span>
+                  <span>Adapt the ambiance to different times of day or events</span>
                 </li>
               </ul>
             </div>
@@ -145,23 +144,22 @@ export default function HospitalityPage() {
                   />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold text-[#121212] dark:text-white">Luxury Experience</h3>
+              <h3 className="text-xl font-bold text-[#121212] dark:text-white">Information & Wayfinding</h3>
               <p className="mt-2 text-muted-foreground">
-                Create a premium, high-tech guest experience that differentiates your property and justifies premium
-                rates.
+                Provide guests with clear and engaging information through dynamic digital displays.
               </p>
               <ul className="mt-4 space-y-2">
                 <li className="flex items-start gap-2">
                   <Check className="h-5 w-5 text-[#007BFF] flex-shrink-0 mt-0.5" />
-                  <span>Wow factor that impresses guests</span>
+                  <span>Interactive wayfinding systems for easy navigation</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <Check className="h-5 w-5 text-[#007BFF] flex-shrink-0 mt-0.5" />
-                  <span>Integration with room control systems</span>
+                  <span>Digital menu boards for restaurants and bars</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <Check className="h-5 w-5 text-[#007BFF] flex-shrink-0 mt-0.5" />
-                  <span>Customizable to match your brand aesthetic</span>
+                  <span>Event schedules and promotional content</span>
                 </li>
               </ul>
             </div>
@@ -229,9 +227,9 @@ export default function HospitalityPage() {
                       1
                     </div>
                     <div>
-                      <h4 className="font-bold text-[#121212] dark:text-white">Bathroom Enclosures</h4>
+                      <h4 className="font-bold text-[#121212] dark:text-white">Lobby Digital Displays</h4>
                       <p className="text-muted-foreground">
-                        Elegant bathroom privacy solutions that maintain an open feel when desired.
+                        Create a stunning first impression with dynamic digital art and information.
                       </p>
                     </div>
                   </div>
@@ -240,9 +238,9 @@ export default function HospitalityPage() {
                       2
                     </div>
                     <div>
-                      <h4 className="font-bold text-[#121212] dark:text-white">Room Dividers</h4>
+                      <h4 className="font-bold text-[#121212] dark:text-white">Spa Ambiance Screens</h4>
                       <p className="text-muted-foreground">
-                        Create flexible suite layouts that can be open or compartmentalized.
+                        Transform spa environments with calming visuals and customizable lighting.
                       </p>
                     </div>
                   </div>
@@ -251,9 +249,9 @@ export default function HospitalityPage() {
                       3
                     </div>
                     <div>
-                      <h4 className="font-bold text-[#121212] dark:text-white">Spa & Wellness Areas</h4>
+                      <h4 className="font-bold text-[#121212] dark:text-white">Room Entertainment Systems</h4>
                       <p className="text-muted-foreground">
-                        Create serene, private treatment spaces with elegant smart glass partitions.
+                        Provide guests with immersive entertainment experiences in their rooms.
                       </p>
                     </div>
                   </div>
@@ -264,9 +262,9 @@ export default function HospitalityPage() {
                       4
                     </div>
                     <div>
-                      <h4 className="font-bold text-[#121212] dark:text-white">Conference Rooms</h4>
+                      <h4 className="font-bold text-[#121212] dark:text-white">Wayfinding Displays</h4>
                       <p className="text-muted-foreground">
-                        Flexible meeting spaces that can be private or open to adjacent areas.
+                        Help guests navigate your property with interactive digital wayfinding.
                       </p>
                     </div>
                   </div>
@@ -275,9 +273,9 @@ export default function HospitalityPage() {
                       5
                     </div>
                     <div>
-                      <h4 className="font-bold text-[#121212] dark:text-white">Restaurant & Bar Areas</h4>
+                      <h4 className="font-bold text-[#121212] dark:text-white">Restaurant Menu Boards</h4>
                       <p className="text-muted-foreground">
-                        Create private dining experiences or adapt spaces for different times of day.
+                        Showcase your menu with dynamic digital displays in your restaurant or bar.
                       </p>
                     </div>
                   </div>
@@ -286,9 +284,9 @@ export default function HospitalityPage() {
                       6
                     </div>
                     <div>
-                      <h4 className="font-bold text-[#121212] dark:text-white">Exterior Windows</h4>
+                      <h4 className="font-bold text-[#121212] dark:text-white">Event Space Branding</h4>
                       <p className="text-muted-foreground">
-                        Control light, heat, and privacy for guest rooms with exterior-facing windows.
+                        Create branded experiences in your event spaces with customizable LED film screens.
                       </p>
                     </div>
                   </div>

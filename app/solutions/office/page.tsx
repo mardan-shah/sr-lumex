@@ -21,10 +21,12 @@ export default function OfficePage() {
         <div className="container relative z-10">
           <div className="max-w-3xl space-y-6">
             <Badge className="bg-[#007BFF] hover:bg-[#007BFF]/90">Office Solutions</Badge>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white">Smart Glass for Modern Workspaces</h1>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white">
+              LED Film Screens for Modern Workspaces
+            </h1>
             <p className="text-xl text-white/90">
-              Transform your office environment with intelligent glass solutions that enhance privacy, productivity, and
-              energy efficiency while maintaining a professional aesthetic.
+              Modernize boardrooms, cabins, and partitions with sleek LED film displays for presentations, branding, or
+              real-time dashboards integrated into your glass interiors.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <Button size="lg" className="bg-[#007BFF] hover:bg-[#007BFF]/90">
@@ -69,22 +71,23 @@ export default function OfficePage() {
                   />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold text-[#121212] dark:text-white">Flexible Privacy</h3>
+              <h3 className="text-xl font-bold text-[#121212] dark:text-white">Dynamic Presentations</h3>
               <p className="mt-2 text-muted-foreground">
-                Create dynamic workspaces that can transition from collaborative to private with the touch of a button.
+                Transform meeting spaces with vibrant LED displays, perfect for presentations and collaborative
+                sessions.
               </p>
               <ul className="mt-4 space-y-2">
                 <li className="flex items-start gap-2">
                   <Check className="h-5 w-5 text-[#007BFF] flex-shrink-0 mt-0.5" />
-                  <span>Instant privacy for meetings and confidential discussions</span>
+                  <span>High-resolution displays for impactful presentations</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <Check className="h-5 w-5 text-[#007BFF] flex-shrink-0 mt-0.5" />
-                  <span>Open, collaborative environment when needed</span>
+                  <span>Seamless integration with presentation software</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <Check className="h-5 w-5 text-[#007BFF] flex-shrink-0 mt-0.5" />
-                  <span>No blinds or curtains to maintain or clean</span>
+                  <span>Create engaging and interactive meeting experiences</span>
                 </li>
               </ul>
             </div>
@@ -107,21 +110,21 @@ export default function OfficePage() {
               </div>
               <h3 className="text-xl font-bold text-[#121212] dark:text-white">Energy Efficiency</h3>
               <p className="mt-2 text-muted-foreground">
-                Reduce energy costs and create a more comfortable work environment with intelligent light and heat
-                management.
+                Reduce energy consumption with LED film technology, offering a sustainable and cost-effective display
+                solution.
               </p>
               <ul className="mt-4 space-y-2">
                 <li className="flex items-start gap-2">
                   <Check className="h-5 w-5 text-[#50C878] flex-shrink-0 mt-0.5" />
-                  <span>Lower HVAC costs by controlling solar heat gain</span>
+                  <span>Low power consumption compared to traditional displays</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <Check className="h-5 w-5 text-[#50C878] flex-shrink-0 mt-0.5" />
-                  <span>Reduce glare on screens and workspaces</span>
+                  <span>Long lifespan reduces replacement and maintenance costs</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <Check className="h-5 w-5 text-[#50C878] flex-shrink-0 mt-0.5" />
-                  <span>Contribute to LEED certification and sustainability goals</span>
+                  <span>Environmentally friendly materials and manufacturing processes</span>
                 </li>
               </ul>
             </div>
@@ -142,22 +145,22 @@ export default function OfficePage() {
                   />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold text-[#121212] dark:text-white">Professional Aesthetics</h3>
+              <h3 className="text-xl font-bold text-[#121212] dark:text-white">Modern Branding</h3>
               <p className="mt-2 text-muted-foreground">
-                Create a modern, sophisticated workspace that impresses clients and enhances employee experience.
+                Enhance your corporate identity with integrated LED film displays for branding and visual communication.
               </p>
               <ul className="mt-4 space-y-2">
                 <li className="flex items-start gap-2">
                   <Check className="h-5 w-5 text-[#007BFF] flex-shrink-0 mt-0.5" />
-                  <span>Clean, contemporary look for modern offices</span>
+                  <span>Showcase your brand with dynamic logos and visuals</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <Check className="h-5 w-5 text-[#007BFF] flex-shrink-0 mt-0.5" />
-                  <span>Customizable to match your brand and design</span>
+                  <span>Create a memorable and impactful brand experience</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <Check className="h-5 w-5 text-[#007BFF] flex-shrink-0 mt-0.5" />
-                  <span>Showcase innovation and forward-thinking</span>
+                  <span>Communicate your brand values and messaging effectively</span>
                 </li>
               </ul>
             </div>
@@ -223,7 +226,7 @@ export default function OfficePage() {
                       1
                     </div>
                     <div>
-                      <h4 className="font-bold text-[#121212] dark:text-white">Conference Rooms</h4>
+                      <h4 className="font-bold text-[#121212] dark:text-white">Conference Room Displays</h4>
                       <p className="text-muted-foreground">
                         Instant privacy for meetings while maintaining an open feel when not in use.
                       </p>
@@ -234,7 +237,7 @@ export default function OfficePage() {
                       2
                     </div>
                     <div>
-                      <h4 className="font-bold text-[#121212] dark:text-white">Executive Offices</h4>
+                      <h4 className="font-bold text-[#121212] dark:text-white">Executive Office Branding</h4>
                       <p className="text-muted-foreground">
                         Privacy on demand for sensitive discussions and open door policy when appropriate.
                       </p>
@@ -245,7 +248,7 @@ export default function OfficePage() {
                       3
                     </div>
                     <div>
-                      <h4 className="font-bold text-[#121212] dark:text-white">Office Partitions</h4>
+                      <h4 className="font-bold text-[#121212] dark:text-white">Reception Area Digital Signage</h4>
                       <p className="text-muted-foreground">
                         Create flexible workspaces that can be open or private as needed.
                       </p>
@@ -258,7 +261,7 @@ export default function OfficePage() {
                       4
                     </div>
                     <div>
-                      <h4 className="font-bold text-[#121212] dark:text-white">Exterior Windows</h4>
+                      <h4 className="font-bold text-[#121212] dark:text-white">Dashboard Displays</h4>
                       <p className="text-muted-foreground">
                         Control glare, heat, and privacy for exterior-facing windows.
                       </p>
@@ -269,7 +272,7 @@ export default function OfficePage() {
                       5
                     </div>
                     <div>
-                      <h4 className="font-bold text-[#121212] dark:text-white">Presentation Spaces</h4>
+                      <h4 className="font-bold text-[#121212] dark:text-white">Presentation Screens</h4>
                       <p className="text-muted-foreground">
                         Reduce glare and improve projection visibility with switchable glass.
                       </p>
@@ -280,7 +283,7 @@ export default function OfficePage() {
                       6
                     </div>
                     <div>
-                      <h4 className="font-bold text-[#121212] dark:text-white">Reception Areas</h4>
+                      <h4 className="font-bold text-[#121212] dark:text-white">Corporate Messaging Systems</h4>
                       <p className="text-muted-foreground">
                         Create a modern, impressive entrance that showcases innovation.
                       </p>

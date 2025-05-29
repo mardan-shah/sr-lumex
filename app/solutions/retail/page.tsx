@@ -21,10 +21,12 @@ export default function RetailPage() {
         <div className="container relative z-10">
           <div className="max-w-3xl space-y-6">
             <Badge className="bg-[#007BFF] hover:bg-[#007BFF]/90">Retail Solutions</Badge>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white">Smart Glass for Innovative Retail</h1>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white">
+              LED Film Screens for Innovative Retail
+            </h1>
             <p className="text-xl text-white/90">
-              Transform your retail space with intelligent glass solutions that enhance customer experience, showcase
-              products, and create dynamic environments.
+              Turn storefront glass into eye-catching digital signage: ideal for showcasing promotions, product videos,
+              and brand storytelling without blocking visibility.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <Button size="lg" className="bg-[#007BFF] hover:bg-[#007BFF]/90">
@@ -232,7 +234,7 @@ export default function RetailPage() {
                       1
                     </div>
                     <div>
-                      <h4 className="font-bold text-[#121212] dark:text-white">Storefront Windows</h4>
+                      <h4 className="font-bold text-[#121212] dark:text-white">Storefront digital signage</h4>
                       <p className="text-muted-foreground">
                         Dynamic displays that can switch between transparent and projection surfaces.
                       </p>
@@ -243,7 +245,7 @@ export default function RetailPage() {
                       2
                     </div>
                     <div>
-                      <h4 className="font-bold text-[#121212] dark:text-white">Product Display Cases</h4>
+                      <h4 className="font-bold text-[#121212] dark:text-white">Product showcase displays</h4>
                       <p className="text-muted-foreground">
                         Reveal high-value merchandise on demand with switchable transparency.
                       </p>
@@ -254,7 +256,7 @@ export default function RetailPage() {
                       3
                     </div>
                     <div>
-                      <h4 className="font-bold text-[#121212] dark:text-white">Fitting Room Partitions</h4>
+                      <h4 className="font-bold text-[#121212] dark:text-white">Interactive customer experiences</h4>
                       <p className="text-muted-foreground">
                         Privacy on demand for fitting rooms with a modern aesthetic.
                       </p>
@@ -267,7 +269,7 @@ export default function RetailPage() {
                       4
                     </div>
                     <div>
-                      <h4 className="font-bold text-[#121212] dark:text-white">Interactive Walls</h4>
+                      <h4 className="font-bold text-[#121212] dark:text-white">Promotional video walls</h4>
                       <p className="text-muted-foreground">
                         Combine smart glass with projection for interactive customer experiences.
                       </p>
@@ -278,7 +280,7 @@ export default function RetailPage() {
                       5
                     </div>
                     <div>
-                      <h4 className="font-bold text-[#121212] dark:text-white">Pop-up Spaces</h4>
+                      <h4 className="font-bold text-[#121212] dark:text-white">Brand storytelling screens</h4>
                       <p className="text-muted-foreground">
                         Create flexible, adaptable spaces for temporary retail installations.
                       </p>
@@ -289,7 +291,7 @@ export default function RetailPage() {
                       6
                     </div>
                     <div>
-                      <h4 className="font-bold text-[#121212] dark:text-white">VIP Areas</h4>
+                      <h4 className="font-bold text-[#121212] dark:text-white">Window advertising displays</h4>
                       <p className="text-muted-foreground">
                         Create private shopping experiences that can be revealed when needed.
                       </p>

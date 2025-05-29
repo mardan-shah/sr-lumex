@@ -13,9 +13,22 @@ export default function AboutPage() {
         <div className="container">
           <div className="max-w-3xl mx-auto text-center space-y-6">
             <Badge className="bg-[#007BFF] hover:bg-[#007BFF]/90">About SR Lumex</Badge>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#121212] dark:text-white">
-              Transforming Spaces Through Innovation
-            </h1>
+            <div className="relative">
+              {/* Visually layered heading */}
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#121212]/10 dark:text-white/10">
+                Transforming Spaces
+              </h1>
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#121212]/20 dark:text-white/20 absolute top-[0.15em] left-0 right-0">
+                Transforming Spaces
+              </h1>
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#121212] dark:text-white absolute top-[0.3em] left-0 right-0">
+                Transforming Spaces
+              </h1>
+              <div className="h-16 md:h-20 lg:h-24"></div>
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#007BFF] dark:text-[#007BFF]">
+                Through Innovation
+              </h1>
+            </div>
             <p className="text-lg text-muted-foreground">
               We're on a mission to revolutionize how people experience and interact with their environments through
               cutting-edge smart glass technology.
@@ -33,18 +46,19 @@ export default function AboutPage() {
                 Our Vision
               </Badge>
               <h2 className="text-3xl md:text-4xl font-bold text-[#121212] dark:text-white">
-                Creating Intelligent Environments
+                Leading Pakistan's Digital Transformation
               </h2>
               <p className="text-muted-foreground">
-                At SR Lumex, we envision a world where spaces adapt intelligently to human needs, where privacy,
-                comfort, and aesthetics coexist seamlessly through innovative technology.
+                To lead Pakistan's LED film screen movement, transform your everyday spaces into intelligence, reshaping
+                how people experience and interact with spaces through intelligent, adaptive, and design-forward
+                solutions.
               </p>
               <div className="space-y-3">
                 <div className="flex items-start gap-3">
                   <CheckCircle className="h-6 w-6 text-[#007BFF] flex-shrink-0 mt-1" />
                   <p>
                     <span className="font-bold text-[#121212] dark:text-white">Innovation-driven:</span> Constantly
-                    pushing the boundaries of what's possible with smart glass technology.
+                    pushing the boundaries of what's possible with LED film technology.
                   </p>
                 </div>
                 <div className="flex items-start gap-3">
@@ -57,8 +71,8 @@ export default function AboutPage() {
                 <div className="flex items-start gap-3">
                   <CheckCircle className="h-6 w-6 text-[#007BFF] flex-shrink-0 mt-1" />
                   <p>
-                    <span className="font-bold text-[#121212] dark:text-white">Quality-obsessed:</span> Uncompromising
-                    commitment to excellence in every product we create.
+                    <span className="font-bold text-[#121212] dark:text-white">Design-forward:</span> Uncompromising
+                    commitment to aesthetics and functionality in every product we create.
                   </p>
                 </div>
               </div>
@@ -95,32 +109,34 @@ export default function AboutPage() {
             <div className="order-1 md:order-2 space-y-6">
               <Badge className="bg-[#007BFF] hover:bg-[#007BFF]/90">Our Mission</Badge>
               <h2 className="text-3xl md:text-4xl font-bold text-[#121212] dark:text-white">
-                Elevating Spaces Through Technology
+                Transforming Pakistan's Spaces
               </h2>
               <p className="text-muted-foreground">
-                Our mission is to transform ordinary spaces into extraordinary experiences through innovative smart
-                glass solutions that enhance privacy, comfort, energy efficiency, and aesthetic appeal.
+                SR Lumex is committed to transform the landscape of architecture, interiors, and retail environments in
+                Pakistan by introducing innovative LED film technologies. We aim to empower businesses, homeowners, and
+                creators with sustainable, energy-efficient, and aesthetically advanced solutions that enhance both
+                functionality and design.
               </p>
               <div className="space-y-3">
                 <div className="flex items-start gap-3">
                   <CheckCircle className="h-6 w-6 text-[#007BFF] flex-shrink-0 mt-1" />
                   <p>
-                    <span className="font-bold text-[#121212] dark:text-white">Accessibility:</span> Making smart glass
-                    technology accessible to more people and businesses.
+                    <span className="font-bold text-[#121212] dark:text-white">Empowerment:</span> Providing tools and
+                    technology that enable creative expression and functional improvement.
                   </p>
                 </div>
                 <div className="flex items-start gap-3">
                   <CheckCircle className="h-6 w-6 text-[#007BFF] flex-shrink-0 mt-1" />
                   <p>
-                    <span className="font-bold text-[#121212] dark:text-white">Sustainability:</span> Reducing energy
-                    consumption and environmental impact through our products.
+                    <span className="font-bold text-[#121212] dark:text-white">Sustainability:</span> Creating
+                    energy-efficient solutions that reduce environmental impact.
                   </p>
                 </div>
                 <div className="flex items-start gap-3">
                   <CheckCircle className="h-6 w-6 text-[#007BFF] flex-shrink-0 mt-1" />
                   <p>
                     <span className="font-bold text-[#121212] dark:text-white">Innovation:</span> Continuously
-                    developing new applications and improvements for smart glass technology.
+                    developing new applications and improvements for LED film technology.
                   </p>
                 </div>
               </div>
@@ -129,8 +145,26 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Team Section (Optional) */}
+      {/* What is SR Lumex? Section */}
       <section className="py-20 bg-[#ECECEC] dark:bg-[#121212]/80">
+        <div className="container">
+          <div className="space-y-6">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#121212] dark:text-white text-center">
+              What is SR Lumex?
+            </h2>
+            <p className="text-muted-foreground text-center max-w-3xl mx-auto">
+              SR Lumex introduces a new era of architectural glass, where technology and design work hand in hand. Our
+              LED film screens are designed to transform ordinary glass into dynamic displays, delivering immersive
+              visuals while maximizing space efficiency and modern appeal. With a focus on clean aesthetics and smooth
+              integration, SR Lumex adds a modern, refined touch to interiors, making environments not only smarter but
+              noticeably more sophisticated.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Team Section (Optional) */}
+      <section className="py-20">
         <div className="container">
           <div className="text-center space-y-4 mb-16">
             <Badge className="bg-[#007BFF] hover:bg-[#007BFF]/90">Our Team</Badge>
@@ -193,7 +227,7 @@ export default function AboutPage() {
       </section>
 
       {/* Milestones Section */}
-      <section className="py-20">
+      <section className="py-20 bg-[#ECECEC] dark:bg-[#121212]/80">
         <div className="container">
           <div className="text-center space-y-4 mb-16">
             <Badge className="bg-[#121212] dark:bg-[#ECECEC] dark:text-[#121212] hover:bg-[#121212]/90">
@@ -206,7 +240,72 @@ export default function AboutPage() {
             </p>
           </div>
 
-          <div className="relative">
+          {/* Mobile Timeline */}
+          <div className="block md:hidden space-y-8">
+            {[
+              {
+                year: "2010",
+                title: "Company Founded",
+                description: "SR Lumex was established with a vision to revolutionize architectural glass technology.",
+                icon: "🚀",
+              },
+              {
+                year: "2013",
+                title: "First Patent",
+                description:
+                  "Secured our first patent for innovative PDLC film technology, setting the foundation for our future products.",
+                icon: "📜",
+              },
+              {
+                year: "2015",
+                title: "International Expansion",
+                description:
+                  "Expanded operations to Europe and the Middle East, bringing our technology to new markets.",
+                icon: "🌍",
+              },
+              {
+                year: "2018",
+                title: "Innovation Award",
+                description:
+                  "Received the prestigious Global Innovation Award for our contributions to sustainable building technology.",
+                icon: "🏆",
+              },
+              {
+                year: "2020",
+                title: "Smart Integration",
+                description:
+                  "Launched our smart home integration system, allowing seamless control of smart glass through popular home automation platforms.",
+                icon: "🏠",
+              },
+              {
+                year: "2023",
+                title: "Sustainability Milestone",
+                description:
+                  "Achieved carbon-neutral manufacturing processes and launched our eco-friendly product line.",
+                icon: "🌱",
+              },
+            ].map((milestone, index) => (
+              <div key={index} className="relative pl-12">
+                {/* Mobile Timeline Line */}
+                {index !== 5 && <div className="absolute left-6 top-12 w-0.5 h-16 bg-[#ECECEC] dark:bg-[#333]" />}
+
+                {/* Mobile Timeline Icon */}
+                <div className="absolute left-0 top-0 w-12 h-12 rounded-full bg-[#007BFF] flex items-center justify-center text-white text-xl">
+                  {milestone.icon}
+                </div>
+
+                {/* Mobile Content */}
+                <div className="bg-white dark:bg-[#1E1E1E] p-6 rounded-xl shadow-md">
+                  <span className="text-sm font-bold text-[#007BFF]">{milestone.year}</span>
+                  <h3 className="text-xl font-bold text-[#121212] dark:text-white mt-1">{milestone.title}</h3>
+                  <p className="mt-2 text-muted-foreground">{milestone.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* Desktop Timeline */}
+          <div className="hidden md:block relative">
             {/* Timeline Line */}
             <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-[#ECECEC] dark:bg-[#333]" />
 
@@ -256,11 +355,11 @@ export default function AboutPage() {
                 },
               ].map((milestone, index) => (
                 <div key={index} className="relative">
-                  <div className={`flex items-center ${index % 2 === 0 ? "flex-row md:flex-row-reverse" : "flex-row"}`}>
-                    <div className="w-full md:w-1/2 px-4 md:px-8">
+                  <div className={`flex items-center ${index % 2 === 0 ? "flex-row-reverse" : "flex-row"}`}>
+                    <div className="w-1/2 px-8">
                       <div
                         className={`bg-white dark:bg-[#1E1E1E] p-6 rounded-xl shadow-md ${
-                          index % 2 === 0 ? "text-left md:text-right" : "text-left"
+                          index % 2 === 0 ? "text-right" : "text-left"
                         }`}
                       >
                         <span className="text-sm font-bold text-[#007BFF]">{milestone.year}</span>
@@ -269,11 +368,11 @@ export default function AboutPage() {
                       </div>
                     </div>
                     <div className="absolute left-1/2 transform -translate-x-1/2 flex items-center justify-center">
-                      <div className="w-12 h-12 rounded-full bg-[#007BFF] dark:bg-[#007BFF] flex items-center justify-center text-white text-xl z-10">
+                      <div className="w-12 h-12 rounded-full bg-[#007BFF] flex items-center justify-center text-white text-xl z-10">
                         {milestone.icon}
                       </div>
                     </div>
-                    <div className="w-1/2 hidden md:block" />
+                    <div className="w-1/2" />
                   </div>
                 </div>
               ))}

@@ -56,15 +56,15 @@ export default function BlogPage() {
               Featured Article
             </Badge>
             <h2 className="text-3xl md:text-4xl font-bold text-[#121212] dark:text-white">
-              The Future of Smart Glass in Sustainable Architecture
+              Smart Office Trends in Pakistan: Embracing the Future of Work
             </h2>
           </div>
 
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="relative rounded-xl overflow-hidden shadow-lg">
               <Image
-                src="/placeholder.svg?height=600&width=800&text=Featured%20Article"
-                alt="Featured Article"
+                src="/placeholder.svg?height=600&width=800&text=Smart%20Office%20Trends"
+                alt="Smart Office Trends"
                 width={800}
                 height={600}
                 className="w-full h-auto"
@@ -74,32 +74,44 @@ export default function BlogPage() {
               <div className="flex items-center gap-4 text-muted-foreground">
                 <div className="flex items-center gap-1">
                   <Calendar className="h-4 w-4" />
-                  <span>May 8, 2025</span>
+                  <span>May 15, 2025</span>
                 </div>
                 <div className="flex items-center gap-1">
                   <User className="h-4 w-4" />
-                  <span>Sarah Johnson</span>
+                  <span>Ahmed Khan</span>
                 </div>
                 <div className="flex items-center gap-1">
                   <Tag className="h-4 w-4" />
-                  <span>Sustainability</span>
+                  <span>Office</span>
                 </div>
               </div>
 
               <p className="text-muted-foreground">
-                Smart glass technology is revolutionizing sustainable architecture by providing dynamic control over
-                light, heat, and privacy. This article explores how architects and designers are incorporating smart
-                glass to create more energy-efficient, comfortable, and aesthetically pleasing buildings.
+                As Pakistan's digital landscape evolves, the concept of smart offices is gaining traction, transforming
+                traditional workplaces into dynamic, efficient, and employee-centric environments. With the rise of
+                technologies like IoT, AI, and automation, businesses are reimagining their office spaces to foster
+                productivity and sustainability.
               </p>
 
-              <p className="text-muted-foreground">
-                From reducing HVAC costs to enhancing occupant comfort, smart glass offers a range of benefits that
-                align with the growing focus on sustainable building practices. We'll examine case studies,
-                technological advancements, and future trends in this exciting field.
-              </p>
+              <div className="space-y-4">
+                <div>
+                  <h3 className="font-bold text-[#121212] dark:text-white">1. Emphasis on Energy Efficiency</h3>
+                  <p className="text-muted-foreground">
+                    Energy management is a critical aspect of smart offices. By utilizing smart lighting systems and
+                    HVAC controls, offices can significantly reduce energy consumption.
+                  </p>
+                </div>
+                <div>
+                  <h3 className="font-bold text-[#121212] dark:text-white">2. Flexible and Adaptive Workspaces</h3>
+                  <p className="text-muted-foreground">
+                    The shift towards hybrid work models has prompted the need for adaptable office spaces with modular
+                    furniture and movable partitions.
+                  </p>
+                </div>
+              </div>
 
               <Button asChild className="mt-4 bg-[#007BFF] hover:bg-[#007BFF]/90">
-                <Link href="/blog/future-of-smart-glass">
+                <Link href="/blog/smart-office-trends-pakistan">
                   Read Full Article <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </Button>
@@ -108,8 +120,77 @@ export default function BlogPage() {
         </div>
       </section>
 
-      {/* Latest Articles Section */}
+      {/* Second Featured Article */}
       <section className="py-20 bg-[#ECECEC] dark:bg-[#121212]/80">
+        <div className="container">
+          <div className="text-center space-y-4 mb-16">
+            <Badge className="bg-[#007BFF] hover:bg-[#007BFF]/90">Comparison</Badge>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#121212] dark:text-white">
+              Curtains vs LED Smart Film – The Showdown
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">Who Wins in the Age of Smart Spaces?</p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="space-y-6 order-2 md:order-1">
+              <div className="flex items-center gap-4 text-muted-foreground">
+                <div className="flex items-center gap-1">
+                  <Calendar className="h-4 w-4" />
+                  <span>May 10, 2025</span>
+                </div>
+                <div className="flex items-center gap-1">
+                  <User className="h-4 w-4" />
+                  <span>Fatima Zaidi</span>
+                </div>
+                <div className="flex items-center gap-1">
+                  <Tag className="h-4 w-4" />
+                  <span>Comparison</span>
+                </div>
+              </div>
+
+              <p className="text-muted-foreground">
+                As modern architecture embraces minimalism, automation, and efficiency, traditional window treatments
+                like curtains are gradually being replaced. One groundbreaking alternative gaining popularity is
+                PDLC-based LED Smart Film.
+              </p>
+
+              <div className="space-y-4">
+                <div>
+                  <h3 className="font-bold text-[#121212] dark:text-white">1. Privacy On Demand</h3>
+                  <p className="text-muted-foreground">
+                    LED Smart Film delivers instant privacy at the touch of a switch, ensuring full, consistent privacy
+                    without physical interference.
+                  </p>
+                </div>
+                <div>
+                  <h3 className="font-bold text-[#121212] dark:text-white">2. Modern Aesthetic</h3>
+                  <p className="text-muted-foreground">
+                    Smart Film offers a smooth, frameless appearance that blends perfectly with glass architecture.
+                  </p>
+                </div>
+              </div>
+
+              <Button asChild className="mt-4 bg-[#007BFF] hover:bg-[#007BFF]/90">
+                <Link href="/blog/curtains-vs-led-smart-film">
+                  Read Full Article <ArrowRight className="ml-2 h-4 w-4" />
+                </Link>
+              </Button>
+            </div>
+            <div className="relative rounded-xl overflow-hidden shadow-lg order-1 md:order-2">
+              <Image
+                src="/placeholder.svg?height=600&width=800&text=Curtains%20vs%20Smart%20Film"
+                alt="Curtains vs Smart Film"
+                width={800}
+                height={600}
+                className="w-full h-auto"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Latest Articles Section */}
+      <section className="py-20">
         <div className="container">
           <div className="text-center space-y-4 mb-16">
             <Badge className="bg-[#007BFF] hover:bg-[#007BFF]/90">Latest Articles</Badge>
@@ -129,6 +210,7 @@ export default function BlogPage() {
                 author: "Michael Chen",
                 category: "Residential",
                 image: "/placeholder.svg?height=400&width=600&text=Smart%20Home",
+                slug: "surprising-uses-smart-glass-homes",
               },
               {
                 title: "Smart Office Trends: Privacy and Collaboration in Balance",
@@ -138,6 +220,7 @@ export default function BlogPage() {
                 author: "Elena Rodriguez",
                 category: "Office",
                 image: "/placeholder.svg?height=400&width=600&text=Smart%20Office",
+                slug: "smart-office-trends-privacy-collaboration",
               },
               {
                 title: "Curtains vs. Smart Glass: The Ultimate Showdown",
@@ -147,6 +230,7 @@ export default function BlogPage() {
                 author: "David Kim",
                 category: "Comparison",
                 image: "/placeholder.svg?height=400&width=600&text=Comparison",
+                slug: "curtains-vs-smart-glass-showdown",
               },
               {
                 title: "Energy Savings: How Smart Glass Reduces HVAC Costs",
@@ -156,6 +240,7 @@ export default function BlogPage() {
                 author: "Sarah Johnson",
                 category: "Sustainability",
                 image: "/placeholder.svg?height=400&width=600&text=Energy%20Savings",
+                slug: "energy-savings-smart-glass-hvac",
               },
               {
                 title: "The Science Behind PDLC Technology",
@@ -165,6 +250,7 @@ export default function BlogPage() {
                 author: "Dr. Robert Chen",
                 category: "Technology",
                 image: "/placeholder.svg?height=400&width=600&text=PDLC%20Technology",
+                slug: "science-behind-pdlc-technology",
               },
               {
                 title: "Smart Glass in Healthcare: Privacy and Infection Control",
@@ -174,6 +260,7 @@ export default function BlogPage() {
                 author: "Dr. Amanda Johnson",
                 category: "Healthcare",
                 image: "/placeholder.svg?height=400&width=600&text=Healthcare",
+                slug: "smart-glass-healthcare-privacy-infection-control",
               },
             ].map((article, index) => (
               <div key={index} className="bg-white dark:bg-[#1E1E1E] rounded-xl overflow-hidden shadow-md">
@@ -196,7 +283,7 @@ export default function BlogPage() {
                   <div className="flex items-center justify-between">
                     <span className="text-sm text-muted-foreground">By {article.author}</span>
                     <Button asChild variant="link" className="p-0 text-[#007BFF] hover:text-[#007BFF]/80">
-                      <Link href={`/blog/${index + 1}`}>
+                      <Link href={`/blog/${article.slug}`}>
                         Read More <ArrowRight className="ml-1 h-4 w-4" />
                       </Link>
                     </Button>
@@ -217,7 +304,7 @@ export default function BlogPage() {
       </section>
 
       {/* Categories Section */}
-      <section className="py-20">
+      <section className="py-20 bg-[#ECECEC] dark:bg-[#121212]/80">
         <div className="container">
           <div className="text-center space-y-4 mb-16">
             <Badge className="bg-[#121212] dark:bg-[#ECECEC] dark:text-[#121212] hover:bg-[#121212]/90">

@@ -115,11 +115,11 @@ export default function ProjectsPage() {
               Featured Project
             </Badge>
             <h2 className="text-3xl md:text-4xl font-bold text-[#121212] dark:text-white">
-              Sky Tower Corporate Headquarters
+              SR Lumex LED Film Screen Solutions
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              A comprehensive smart glass installation for a 40-story corporate headquarters, showcasing the full
-              potential of SR Lumex technology.
+              Introducing innovative LED film screen technology to the market with customizable, energy-efficient, and
+              aesthetically refined solutions for modern spaces.
             </p>
           </div>
 
@@ -127,8 +127,8 @@ export default function ProjectsPage() {
             <div className="space-y-6">
               <div className="relative rounded-xl overflow-hidden shadow-lg">
                 <Image
-                  src="/placeholder.svg?height=600&width=800&text=Featured%20Project"
-                  alt="Featured Project"
+                  src="/placeholder.svg?height=600&width=800&text=SR%20Lumex%20LED%20Film%20Solutions"
+                  alt="SR Lumex LED Film Screen Solutions"
                   width={800}
                   height={600}
                   className="w-full h-auto"
@@ -139,43 +139,42 @@ export default function ProjectsPage() {
               <div className="space-y-4">
                 <div className="flex items-center gap-2">
                   <Badge variant="outline" className="bg-white/10 dark:bg-black/10">
-                    Location
+                    Technology
                   </Badge>
-                  <span>Singapore</span>
+                  <span>PDLC & LED Film Solutions</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Badge variant="outline" className="bg-white/10 dark:bg-black/10">
-                    Project Size
+                    Market Focus
                   </Badge>
-                  <span>15,000 square meters of smart glass</span>
+                  <span>Pakistan & Regional Markets</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Badge variant="outline" className="bg-white/10 dark:bg-black/10">
-                    Completion
+                    Status
                   </Badge>
-                  <span>2023</span>
+                  <span>Active Development & Launch</span>
                 </div>
               </div>
 
-              <h3 className="text-xl font-bold text-[#121212] dark:text-white">Project Brief</h3>
+              <h3 className="text-xl font-bold text-[#121212] dark:text-white">Project Objective</h3>
               <p className="text-muted-foreground">
-                Sky Tower required a comprehensive smart glass solution that would enhance energy efficiency, provide
-                privacy for meeting spaces, and showcase the company's commitment to innovation and sustainability.
+                To introduce SR Lumex's innovative LED film screen technology to the market, providing customizable,
+                energy-efficient, and aesthetically refined LED screens for modern spaces across multiple industries.
               </p>
 
-              <h3 className="text-xl font-bold text-[#121212] dark:text-white">Challenges</h3>
+              <h3 className="text-xl font-bold text-[#121212] dark:text-white">Key Features</h3>
               <ul className="list-disc pl-5 space-y-2 text-muted-foreground">
-                <li>Integration with existing building management system</li>
-                <li>Tropical climate with intense sun exposure</li>
-                <li>Need for both privacy and transparency in various spaces</li>
-                <li>Large-scale installation requiring precise coordination</li>
+                <li>PDLC Film: Instant privacy and light control with switchable transparency</li>
+                <li>LED Film: Flexible LED lighting for dynamic effects and enhanced visibility</li>
+                <li>Energy Efficiency: Reduces heat transfer and improves energy savings</li>
+                <li>Modern Aesthetic: Sleek, frameless design to elevate any space</li>
               </ul>
 
-              <h3 className="text-xl font-bold text-[#121212] dark:text-white">Solution</h3>
+              <h3 className="text-xl font-bold text-[#121212] dark:text-white">Target Markets</h3>
               <p className="text-muted-foreground">
-                SR Lumex provided a custom solution featuring exterior smart glass with solar control properties,
-                interior privacy glass for meeting rooms, and a centralized control system integrated with the
-                building's existing management platform.
+                Architects, interior designers, business owners, retail brands, real estate developers, hospitality
+                industry, event planners, and educational institutions across Pakistan and regional markets.
               </p>
 
               <Button asChild className="mt-4 bg-[#007BFF] hover:bg-[#007BFF]/90">

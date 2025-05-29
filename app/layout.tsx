@@ -8,9 +8,8 @@ import { ThemeProvider } from "@/components/theme-provider"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "SR Lumex | Premium Smart Glass Technology",
-  description:
-    "Transform your space with SR Lumex smart glass technology. From transparent to transformative at the touch of a button.",
+  title: "SR Lumex - Smart Glass Solutions",
+  description: "Transform your space with intelligent LED film screen technology",
     generator: 'v0.dev'
 }
 
@@ -20,21 +19,15 @@ export const viewport: Viewport = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode
-}>) {
+}) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="light"
-          enableSystem
-          disableTransitionOnChange
-          forcedTheme={undefined}
-        >
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
           <Navbar />
-          {children}
+          <main>{children}</main>
           <footer className="bg-[#121212] dark:bg-[#0A0A0A] text-white py-16">
             <div className="container">
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
