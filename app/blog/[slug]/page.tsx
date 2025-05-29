@@ -5,10 +5,23 @@ import { ArrowLeft, Calendar, User, Share2, Facebook, Twitter, Linkedin, ArrowRi
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 
-// Mock blog data
-const blogPosts = {
+// Define the BlogPost interface
+interface BlogPost {
+  title: string;
+  subtitle?: string; // Optional property
+  date: string;
+  author: string;
+  category: string;
+  image: string;
+  content: string;
+  relatedPosts: string[];
+}
+
+// Type the blogPosts object
+const blogPosts: Record<string, BlogPost> = {
   "smart-office-trends-pakistan": {
     title: "Smart Office Trends in Pakistan: Embracing the Future of Work",
+    subtitle: '',
     date: "May 15, 2025",
     author: "Ahmed Khan",
     category: "Office",
@@ -214,7 +227,10 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#121212] dark:text-white mb-4">
               {post.title}
             </h1>
-            {post.subtitle && <p className="text-xl md:text-2xl text-muted-foreground mb-6">{post.subtitle}</p>}
+            {/* Safely handle optional subtitle */}
+            {post.subtitle && (
+              <p className="text-xl md:text-2xl text-muted-foreground mb-6">{post.subtitle}</p>
+            )}
             <div className="flex items-center gap-4 text-muted-foreground">
               <div className="flex items-center gap-1">
                 <Calendar className="h-4 w-4" />
