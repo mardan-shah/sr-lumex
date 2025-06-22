@@ -34,8 +34,8 @@ export default function Navbar() {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled || !isHomePage
-          ? "bg-white/90 dark:bg-[#121212]/90 backdrop-blur-md shadow-sm py-3"
-          : "bg-transparent py-5"
+          ? "bg-white/90 dark:bg-[#121212]/90 shadow-sm py-3"
+          : "py-5"
       }`}
     >
       <div className="container flex items-center justify-between">
@@ -149,7 +149,7 @@ export default function Navbar() {
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: "100%" }}
               transition={{ duration: 0.3 }}
-              className="fixed inset-0 bg-white/95 dark:bg-gray-900/95 backdrop-blur-md z-50 flex flex-col"
+              className="fixed inset-0 bg-white/95 dark:bg-gray-900/95 z-50 flex flex-col"
             >
               <div className="container py-5 bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-700">
                 <div className="flex items-center justify-between">

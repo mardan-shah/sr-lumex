@@ -12,6 +12,7 @@ import {
   Lightbulb,
   Gem,
 } from "lucide-react"
+import { JSX } from "react"
 
 interface FeatureCardProps {
   title: string
