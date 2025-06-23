@@ -8,10 +8,16 @@ import { ThemeProvider } from "@/components/theme-provider"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "SR Lumex - Smart Glass Solutions",
+  title: "SR Lumex",
   description: "Transform your space with intelligent LED film screen technology",
-    generator: 'v0.dev'
+  generator: "v0.dev",
+  icons: {
+    icon: "/favicon_io/favicon.ico",
+    shortcut: "/favicon_io/favicon.ico",
+    apple: "/favicon_io/apple-touch-icon.png",
+  },
 }
+
 
 export const viewport: Viewport = {
   themeColor: "#007BFF",
@@ -25,7 +31,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
+        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
           <Navbar />
           <main>{children}</main>
           <footer className="bg-[#121212] dark:bg-[#0A0A0A] text-white py-16">

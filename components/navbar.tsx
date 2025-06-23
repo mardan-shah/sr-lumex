@@ -4,7 +4,7 @@ import { useState, useEffect } from "react"
 import Link from "next/link"
 import { motion, AnimatePresence } from "framer-motion"
 import { Menu, X, ChevronDown } from "lucide-react"
-
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
 import ThemeToggle from "@/components/theme-toggle"
@@ -41,17 +41,24 @@ export default function Navbar() {
       <div className="container flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center">
-          <span
+          {/* <span
             className={`text-2xl font-bold ${
               isScrolled || !isHomePage ? "text-[#121212] dark:text-white" : "text-white"
             }`}
           >
             SR<span className="text-[#007BFF]">Lumex</span>
-          </span>
+          </span> */}
+          <Image 
+            src='/logo/LogoWhite.png'
+            alt="SrLumex"
+            width={50}
+            height={50}
+            className=" shadow-xl bg-transparent"
+          />
         </Link>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center gap-8">
+        <nav className="hidden lg:flex items-center gap-8">
           <Link
             href="/"
             className={`font-medium hover:text-[#007BFF] transition-colors ${
@@ -127,7 +134,7 @@ export default function Navbar() {
         </nav>
 
         {/* CTA Button */}
-        <div className="hidden md:block">
+        <div className="hidden lg:block">
           <Button
             asChild
             className={isScrolled ? "bg-[#007BFF] hover:bg-[#007BFF]/90" : "bg-white text-[#007BFF] hover:bg-white/90"}
@@ -137,7 +144,7 @@ export default function Navbar() {
         </div>
 
         {/* Mobile Menu Button */}
-        <button className="md:hidden" onClick={() => setIsMobileMenuOpen(true)} aria-label="Open menu">
+        <button className="lg:hidden" onClick={() => setIsMobileMenuOpen(true)} aria-label="Open menu">
           <Menu className={isScrolled || !isHomePage ? "text-[#121212] dark:text-white" : "text-white"} />
         </button>
 
