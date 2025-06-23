@@ -130,7 +130,7 @@ export default function Navbar() {
             Blog
           </Link>
 
-          <ThemeToggle isScrolled={isScrolled} isHomePage={isHomePage} />
+          {/* <ThemeToggle isScrolled={isScrolled} isHomePage={isHomePage} /> */}
         </nav>
 
         {/* CTA Button */}
@@ -161,9 +161,16 @@ export default function Navbar() {
               <div className="container py-5 bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-700">
                 <div className="flex items-center justify-between">
                   <Link href="/" className="flex items-center" onClick={() => setIsMobileMenuOpen(false)}>
-                    <span className="text-2xl font-bold text-[#121212] dark:text-white">
+                    {/* <span className="text-2xl font-bold text-[#121212] dark:text-white">
                       SR<span className="text-[#007BFF]">Lumex</span>
-                    </span>
+                    </span> */}
+                    <Image 
+                      src='/logo/LogoWhite.png'
+                      alt="SrLumex"
+                      width={50}
+                      height={50}
+                      className=" shadow-xl bg-transparent"
+                    />
                   </Link>
 
                   <button onClick={() => setIsMobileMenuOpen(false)} aria-label="Close menu">
@@ -262,9 +269,9 @@ export default function Navbar() {
                 >
                   Blog
                 </Link>
-                <div className="py-4 flex justify-center">
+                {/* <div className="py-4 flex justify-center">
                   <ThemeToggle isScrolled={true} isHomePage={false} />
-                </div>
+                </div> */}
               </nav>
 
               <div className="mt-auto p-6">
