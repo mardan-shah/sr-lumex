@@ -6,12 +6,12 @@ import { Badge } from "@/components/ui/badge"
 
 export default function OfficePage() {
   return (
-    <div className="flex min-h-screen flex-col pt-16">
+    <div className="flex min-h-screen flex-col">
       {/* Hero Section */}
       <section className="relative py-20 md:py-28">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/placeholder.svg?height=1080&width=1920&text=Office%20Smart%20Glass"
+            src="/images/office/OfficeMain.jpg"
             alt="Office Smart Glass"
             fill
             className="object-cover"
@@ -183,7 +183,7 @@ export default function OfficePage() {
             <div className="space-y-4">
               <div className="relative rounded-xl overflow-hidden shadow-lg">
                 <Image
-                  src="/placeholder.svg?height=600&width=800&text=Before:%20Traditional%20Office"
+                  src="/images/office/OfficeBefore.jpg"
                   alt="Before: Traditional Office"
                   width={800}
                   height={600}
@@ -200,7 +200,7 @@ export default function OfficePage() {
             <div className="space-y-4">
               <div className="relative rounded-xl overflow-hidden shadow-lg">
                 <Image
-                  src="/placeholder.svg?height=600&width=800&text=After:%20Smart%20Glass%20Office"
+                  src="/images/office/OfficeAfter.jpg"
                   alt="After: Smart Glass Office"
                   width={800}
                   height={600}
@@ -355,7 +355,7 @@ export default function OfficePage() {
               <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-[#50C878]/10 rounded-full dark:bg-[#50C878]/20" />
               <div className="relative rounded-xl overflow-hidden shadow-lg">
                 <Image
-                  src="/placeholder.svg?height=600&width=800&text=Building%20Management%20Integration"
+                  src="/images/office/BuildingManagement.jpg"
                   alt="Building Management Integration"
                   width={800}
                   height={600}
@@ -387,21 +387,21 @@ export default function OfficePage() {
                   "The smart glass conference rooms have completely transformed our office. We can have private meetings when needed, but maintain our open, collaborative culture when appropriate.",
                 name: "Robert Chen",
                 position: "Facilities Director, TechCorp Inc.",
-                image: "/placeholder.svg?height=100&width=100&text=RC",
+                image: "/images/avatar-male-2.svg",
               },
               {
                 quote:
                   "Our clients are always impressed by our smart glass installations. It's become a talking point during visits and showcases our commitment to innovation and sustainability.",
                 name: "Amanda Johnson",
                 position: "CEO, Design Forward Architects",
-                image: "/placeholder.svg?height=100&width=100&text=AJ",
+                image: "/images/avatar-male-1.svg",
               },
               {
                 quote:
                   "The energy savings have been substantial. Our HVAC costs have decreased by 22% since installing SR Lumex smart glass on our south-facing windows.",
                 name: "David Williams",
                 position: "Sustainability Manager, Global Finance Group",
-                image: "/placeholder.svg?height=100&width=100&text=DW",
+                image: "/images/avatar-male-2.svg",
               },
             ].map((testimonial, index) => (
               <div key={index} className="bg-white dark:bg-[#1E1E1E] rounded-xl p-6 shadow-md">

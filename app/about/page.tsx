@@ -7,7 +7,7 @@ import { Badge } from "@/components/ui/badge"
 
 export default function AboutPage() {
   return (
-    <div className="flex min-h-screen flex-col pt-16">
+    <div className="flex min-h-screen flex-col">
       {/* Hero Section */}
       <section className="relative py-20 md:py-28 bg-[#ECECEC] dark:bg-[#121212]/80">
         <div className="container">

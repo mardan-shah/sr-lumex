@@ -215,7 +215,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
   }
 
   return (
-    <div className="flex min-h-screen flex-col pt-16">
+    <div className="flex min-h-screen flex-col">
       {/* Hero Section */}
       <section className="relative py-16 md:py-24 bg-[#ECECEC] dark:bg-[#121212]/80">
         <div className="container">

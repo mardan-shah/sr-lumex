@@ -6,12 +6,12 @@ import { Badge } from "@/components/ui/badge"
 
 export default function RetailPage() {
   return (
-    <div className="flex min-h-screen flex-col pt-16">
+    <div className="flex min-h-screen flex-col">
       {/* Hero Section */}
       <section className="relative py-20 md:py-28">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/placeholder.svg?height=1080&width=1920&text=Retail%20Smart%20Glass"
+            src="/images/Retail/RetailsMain.jpg"
             alt="Retail Smart Glass"
             fill
             className="object-cover"
@@ -191,7 +191,7 @@ export default function RetailPage() {
             <div className="space-y-4">
               <div className="relative rounded-xl overflow-hidden shadow-lg">
                 <Image
-                  src="/placeholder.svg?height=600&width=800&text=Before:%20Traditional%20Retail"
+                  src="/images/Retail/RetailBefore.jpg"
                   alt="Before: Traditional Retail"
                   width={800}
                   height={600}
@@ -208,7 +208,7 @@ export default function RetailPage() {
             <div className="space-y-4">
               <div className="relative rounded-xl overflow-hidden shadow-lg">
                 <Image
-                  src="/placeholder.svg?height=600&width=800&text=After:%20Smart%20Glass%20Retail"
+                  src="/images/Retail/RetailAfter.jpg"
                   alt="After: Smart Glass Retail"
                   width={800}
                   height={600}
@@ -364,7 +364,7 @@ export default function RetailPage() {
               <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-[#50C878]/10 rounded-full dark:bg-[#50C878]/20" />
               <div className="relative rounded-xl overflow-hidden shadow-lg">
                 <Image
-                  src="/placeholder.svg?height=600&width=800&text=Interactive%20Retail%20Experience"
+                  src="/images/Retail/RetailsLast.jpg"
                   alt="Interactive Retail Experience"
                   width={800}
                   height={600}
@@ -396,21 +396,21 @@ export default function RetailPage() {
                   "The smart glass storefront has completely transformed our window displays. We can now create dynamic reveals that stop people in their tracks, and we've seen a significant increase in foot traffic.",
                 name: "Jennifer Lee",
                 position: "Visual Merchandising Director, Luxury Boutique",
-                image: "/placeholder.svg?height=100&width=100&text=JL",
+                image: "/images/avatar-female-1.svg",
               },
               {
                 quote:
                   "Our customers are fascinated by our smart glass display cases. The ability to switch from transparent to opaque creates a sense of exclusivity and intrigue around our premium products.",
                 name: "Michael Chen",
                 position: "Store Design Manager, Tech Retailer",
-                image: "/placeholder.svg?height=100&width=100&text=MC",
+                image: "/images/avatar-female-2.svg",
               },
               {
                 quote:
                   "The energy savings have been substantial, especially in our south-facing stores. The smart glass has reduced our cooling costs while protecting our merchandise from UV damage.",
                 name: "Sarah Johnson",
                 position: "Sustainability Director, Fashion Retail Group",
-                image: "/placeholder.svg?height=100&width=100&text=SJ",
+                image: "/images/avatar-female-1.svg",
               },
             ].map((testimonial, index) => (
               <div key={index} className="bg-white dark:bg-[#1E1E1E] rounded-xl p-6 shadow-md">

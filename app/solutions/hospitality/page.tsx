@@ -6,12 +6,12 @@ import { Badge } from "@/components/ui/badge"
 
 export default function HospitalityPage() {
   return (
-    <div className="flex min-h-screen flex-col pt-16">
+    <div className="flex min-h-screen flex-col">
       {/* Hero Section */}
       <section className="relative py-20 md:py-28">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/placeholder.svg?height=1080&width=1920&text=Hospitality%20Smart%20Glass"
+            src="/images/Hospitality/HospitalityMain.jpg"
             alt="Hospitality Smart Glass"
             fill
             className="object-cover"
@@ -182,7 +182,7 @@ export default function HospitalityPage() {
             <div className="space-y-4">
               <div className="relative rounded-xl overflow-hidden shadow-lg">
                 <Image
-                  src="/placeholder.svg?height=600&width=800&text=Before:%20Traditional%20Hotel"
+                  src="/images/Hospitality/HospitalityBefore.jpg"
                   alt="Before: Traditional Hotel"
                   width={800}
                   height={600}
@@ -199,7 +199,7 @@ export default function HospitalityPage() {
             <div className="space-y-4">
               <div className="relative rounded-xl overflow-hidden shadow-lg">
                 <Image
-                  src="/placeholder.svg?height=600&width=800&text=After:%20Smart%20Glass%20Hotel"
+                  src="/images/Hospitality/HospitalityAfter.jpg"
                   alt="After: Smart Glass Hotel"
                   width={800}
                   height={600}
@@ -357,7 +357,7 @@ export default function HospitalityPage() {
               <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-[#50C878]/10 rounded-full dark:bg-[#50C878]/20" />
               <div className="relative rounded-xl overflow-hidden shadow-lg">
                 <Image
-                  src="/placeholder.svg?height=600&width=800&text=Luxury%20Guest%20Experience"
+                  src="/images/Hospitality/HospitalityElevate.jpg"
                   alt="Luxury Guest Experience"
                   width={800}
                   height={600}
@@ -389,21 +389,21 @@ export default function HospitalityPage() {
                   "The smart glass bathroom enclosures have been a highlight for our guests. They love the modern technology, and our housekeeping team appreciates how easy they are to clean compared to shower curtains.",
                 name: "Elena Rodriguez",
                 position: "Operations Manager, Grand Plaza Hotel",
-                image: "/placeholder.svg?height=100&width=100&text=ER",
+                image: "/images/avatar-female-1.svg",
               },
               {
                 quote:
                   "Our spa renovation featuring SR Lumex smart glass has transformed the guest experience. We can now create private treatment areas that still feel open and connected to the natural surroundings.",
                 name: "Thomas Chen",
                 position: "Spa Director, Oceanview Resort & Spa",
-                image: "/placeholder.svg?height=100&width=100&text=TC",
+                image: "/images/avatar-male-1.svg",
               },
               {
                 quote:
                   "The energy savings have been substantial, especially in our south-facing suites. Guests appreciate being able to control the light and heat with the touch of a button.",
                 name: "Sarah Johnson",
                 position: "Sustainability Manager, Eco Luxury Hotels",
-                image: "/placeholder.svg?height=100&width=100&text=SJ",
+                image: "/images/avatar-female-2.svg",
               },
             ].map((testimonial, index) => (
               <div key={index} className="bg-white dark:bg-[#1E1E1E] rounded-xl p-6 shadow-md">

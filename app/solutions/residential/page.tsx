@@ -6,12 +6,12 @@ import { Badge } from "@/components/ui/badge"
 
 export default function ResidentialPage() {
   return (
-    <div className="flex min-h-screen flex-col pt-16">
+    <div className="flex min-h-screen flex-col">
       {/* Hero Section */}
       <section className="relative py-20 md:py-28">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/placeholder.svg?height=1080&width=1920&text=Residential%20LED%20Film"
+            src="/images/residential/residentialMain.jpg"
             alt="Residential Smart Glass"
             fill
             className="object-cover"
@@ -182,7 +182,7 @@ export default function ResidentialPage() {
             <div className="space-y-4">
               <div className="relative rounded-xl overflow-hidden shadow-lg">
                 <Image
-                  src="/placeholder.svg?height=600&width=800&text=Before:%20Traditional%20Glass"
+                  src="/images/residential/ResidentialBefore.jpg"
                   alt="Before: Traditional Glass"
                   width={800}
                   height={600}
@@ -199,7 +199,7 @@ export default function ResidentialPage() {
             <div className="space-y-4">
               <div className="relative rounded-xl overflow-hidden shadow-lg">
                 <Image
-                  src="/placeholder.svg?height=600&width=800&text=After:%20Smart%20Glass"
+                  src="/images/residential/ResidentialAfter.jpg"
                   alt="After: Smart Glass"
                   width={800}
                   height={600}
@@ -353,7 +353,7 @@ export default function ResidentialPage() {
               <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-[#50C878]/10 rounded-full dark:bg-[#50C878]/20" />
               <div className="relative rounded-xl overflow-hidden shadow-lg">
                 <Image
-                  src="/placeholder.svg?height=600&width=800&text=Smart%20Home%20Integration"
+                  src="/images/residential/residentialSeemless.jpg"
                   alt="Smart Home Integration"
                   width={800}
                   height={600}
@@ -383,21 +383,21 @@ export default function ResidentialPage() {
                   "The LED film in our living room has transformed the space. We can display beautiful ambient visuals and even use it as a dynamic backdrop for movie nights.",
                 name: "Jennifer & David",
                 location: "Modern Home Renovation, California",
-                image: "/placeholder.svg?height=100&width=100&text=J&D",
+                image: "/images/avatar-female-1.svg",
               },
               {
                 quote:
                   "We use the LED film in our kitchen to display recipes and control our smart home devices. It's a game-changer for convenience and aesthetics.",
                 name: "Michael T.",
                 location: "Home Office Upgrade, New York",
-                image: "/placeholder.svg?height=100&width=100&text=MT",
+                image: "/images/avatar-male-1.svg",
               },
               {
                 quote:
                   "The digital art installations we created with SR Lumex LED film are stunning. They add a unique and modern touch to our home.",
                 name: "Sarah & James",
                 location: "Energy-Efficient Home, Texas",
-                image: "/placeholder.svg?height=100&width=100&text=S&J",
+                image: "/images/avatar-female-2.svg",
               },
             ].map((testimonial, index) => (
               <div key={index} className="bg-white dark:bg-[#1E1E1E] rounded-xl p-6 shadow-md">

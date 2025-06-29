@@ -213,7 +213,7 @@ export default function ProjectDetailPage({ params }: { params: { id: string } }
 
   if (!project) {
     return (
-      <div className="flex min-h-screen flex-col pt-16">
+      <div className="flex min-h-screen flex-col">
         <div className="container py-20 text-center">
           <h1 className="text-4xl font-bold mb-4">Project Not Found</h1>
           <p className="text-muted-foreground mb-8">The project you're looking for doesn't exist.</p>
@@ -229,7 +229,7 @@ export default function ProjectDetailPage({ params }: { params: { id: string } }
   }
 
   return (
-    <div className="flex min-h-screen flex-col pt-16">
+    <div className="flex min-h-screen flex-col">
       {/* Hero Section */}
       <section className="relative py-20 md:py-28 bg-[#ECECEC] dark:bg-[#121212]/80">
         <div className="container">

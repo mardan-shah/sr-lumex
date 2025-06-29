@@ -1,16 +1,55 @@
+'use client'
 import Image from "next/image"
-import { Play } from "lucide-react"
+import { Play,Pause } from "lucide-react"
+import { useRef, useState } from "react"
 
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 
 export default function TechnologyPage() {
+  const videoRef = useRef<HTMLVideoElement>(null)
+  const [isPlaying, setIsPlaying] = useState(false)
+  const [hover, setHover] = useState(false)
+
+  const handleMouseEnter = () => {
+    setHover(true)
+  }
+  const handleMouseLeave = () => {
+    setHover(false)
+  }
+
+  const togglePlay = () => {
+    const video = videoRef.current
+    if (!video) return
+    if (isPlaying) {
+      video.pause()
+      setIsPlaying(false)
+    } else {
+      video.muted = true
+      video.play()
+      setIsPlaying(true)
+    }
+  }
   return (
-    <div className="flex min-h-screen flex-col pt-16">
+    <div className="flex min-h-screen flex-col">
       {/* Hero Section */}
-      <section className="relative py-20 md:py-28 bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800">
-        <div className="container px-4">
+      <section className="relative py-20 md:py-28 h-screen overflow-hidden bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800">
+        {/* Video Background Layer */}
+        <video
+          className="absolute inset-0 w-full h-full object-cover"
+          src="/images/Technology/TechnologyMain.mp4"
+          preload="metadata"
+          autoPlay
+          loop
+          muted
+          playsInline
+        />
+        {/* Overlay to dim video */}
+        <div className="absolute inset-0 bg-gray-50/60 dark:bg-gray-900/60" />
+
+        {/* Content */}
+        <div className="relative container px-4">
           <div className="max-w-3xl mx-auto text-center space-y-6">
             <Badge className="bg-[#007BFF] hover:bg-[#007BFF]/90 text-white">Technology</Badge>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#121212] dark:text-white">
@@ -23,6 +62,7 @@ export default function TechnologyPage() {
           </div>
         </div>
       </section>
+
 
       {/* LED Film Explained Section */}
       <section className="py-20 bg-white dark:bg-gray-950">
@@ -110,7 +150,9 @@ export default function TechnologyPage() {
       <section className="py-20 bg-gray-50 dark:bg-gray-900">
         <div className="container px-4">
           <div className="text-center space-y-4 mb-12">
-            <Badge className="bg-[#007BFF] hover:bg-[#007BFF]/90 text-white">See It In Action</Badge>
+            <Badge className="bg-[#007BFF] hover:bg-[#007BFF]/90 text-white">
+              See It In Action
+            </Badge>
             <h2 className="text-3xl md:text-4xl font-bold text-[#121212] dark:text-white">
               LED Film Transformation Demo
             </h2>
@@ -120,23 +162,38 @@ export default function TechnologyPage() {
           </div>
 
           <div className="max-w-4xl mx-auto">
-            <div className="relative rounded-xl overflow-hidden shadow-2xl">
-              <Image
-                src="/placeholder.svg?height=600&width=1000&text=LED%20Film%20Demo%20Video"
-                alt="LED Film Demo Video"
-                width={1000}
-                height={600}
-                className="w-full h-auto"
+            <div
+              className="relative rounded-xl overflow-hidden shadow-2xl"
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
+            >
+              <video
+                ref={videoRef}
+                src="/images/Technology/TransformationDemo.mp4"
+                poster="/placeholder.svg?height=600&width=1000&text=LED%20Film%20Demo%20Video"
+                playsInline
+                muted
+                loop={false}
+                preload="metadata"
+                className="w-full max-h-[600px] object-cover"
               />
-              <div className="absolute inset-0 flex items-center justify-center bg-black/20">
-                <Button
-                  size="lg"
-                  className="rounded-full w-20 h-20 bg-white/20 backdrop-blur-sm hover:bg-white/30 border-2 border-white/50"
-                  aria-label="Play demo video"
-                >
-                  <Play className="w-8 h-8 text-white ml-1" fill="white" />
-                </Button>
-              </div>
+
+              {hover && (
+                <div className="absolute inset-0 flex items-center justify-center bg-black/25">
+                  <Button
+                    size="lg"
+                    className="rounded-full w-20 h-20 bg-white/20 backdrop-blur-sm hover:bg-white/30 border-2 border-white/50"
+                    aria-label={isPlaying ? 'Pause video' : 'Play demo video'}
+                    onClick={togglePlay}
+                  >
+                    {isPlaying ? (
+                      <Pause className="w-8 h-8 text-white" />
+                    ) : (
+                      <Play className="w-8 h-8 text-white" />
+                    )}
+                  </Button>
+                </div>
+              )}
             </div>
           </div>
         </div>

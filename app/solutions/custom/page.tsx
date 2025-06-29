@@ -1,6 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
-import { ArrowRight, Check, FileText, MessageSquare, Phone } from "lucide-react"
+import { ArrowRight, Check, FileText, Mail, MapPin, MessageCircle, MessageSquare, Phone } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
@@ -9,12 +9,12 @@ import { Textarea } from "@/components/ui/textarea"
 
 export default function CustomPage() {
   return (
-    <div className="flex min-h-screen flex-col pt-16">
+    <div className="flex min-h-screen flex-col">
       {/* Hero Section */}
       <section className="relative py-20 md:py-28">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/placeholder.svg?height=1080&width=1920&text=Custom%20Smart%20Glass%20Solutions"
+            src="/images/Custom/CustomeMain.jpg"
             alt="Custom Smart Glass Solutions"
             fill
             className="object-cover"
@@ -190,21 +190,21 @@ export default function CustomPage() {
                 location: "Museum of Modern Art, New York",
                 description:
                   "Custom curved smart glass panels creating a dynamic atrium space that transforms from transparent to private for special events.",
-                image: "/placeholder.svg?height=400&width=600&text=Curved%20Atrium",
+                image: "/images/Custom/Custom.jpg",
               },
               {
                 title: "Interactive Retail Experience",
                 location: "Flagship Luxury Store, Paris",
                 description:
                   "Motion-activated smart glass display cases that reveal high-value merchandise when customers approach.",
-                image: "/placeholder.svg?height=400&width=600&text=Interactive%20Retail",
+                image: "/images/Custom/CustomeRetails.jpg",
               },
               {
                 title: "Yacht Master Suite",
                 location: "Custom Superyacht, Mediterranean",
                 description:
                   "Marine-grade smart glass bathroom enclosure and skylights for a luxury yacht, controllable via the vessel's automation system.",
-                image: "/placeholder.svg?height=400&width=600&text=Yacht%20Suite",
+                image: "/images/Custom/CustomeYatchInterior.jpg",
               },
             ].map((project, index) => (
               <div key={index} className="bg-white dark:bg-[#1E1E1E] rounded-xl overflow-hidden shadow-md">
@@ -335,134 +335,162 @@ export default function CustomPage() {
       {/* Contact Form Section */}
       <section className="py-20 bg-[#ECECEC] dark:bg-[#121212]/80">
         <div className="container">
-          <div className="text-center space-y-4 mb-16">
-            <Badge className="bg-[#007BFF] hover:bg-[#007BFF]/90">Get Started</Badge>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#121212] dark:text-white">
-              Discuss Your Custom Project
-            </h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto">
-              Contact our team of experts to discuss your unique smart glass requirements.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-12">
+          <div className="grid lg:grid-cols-2 gap-12">
+            {/* Contact Form */}
             <div className="bg-white dark:bg-[#1E1E1E] rounded-xl p-8 shadow-lg">
-              <h3 className="text-2xl font-bold text-[#121212] dark:text-white mb-6">Contact Form</h3>
+              <h2 className="text-2xl font-bold text-[#121212] dark:text-white mb-6">Get Your Quote</h2>
               <form className="space-y-6">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div className="space-y-2">
                     <label htmlFor="name" className="text-sm font-medium">
-                      Full Name
+                      Full Name *
                     </label>
-                    <Input id="name" placeholder="Your name" className="bg-white dark:bg-[#2A2A2A]" />
+                    <Input id="name" placeholder="Your name" required className="bg-white dark:bg-[#2A2A2A]" />
                   </div>
                   <div className="space-y-2">
                     <label htmlFor="email" className="text-sm font-medium">
-                      Email Address
+                      Email Address *
                     </label>
-                    <Input id="email" type="email" placeholder="Your email" className="bg-white dark:bg-[#2A2A2A]" />
+                    <Input
+                      id="email"
+                      type="email"
+                      placeholder="Your email"
+                      required
+                      className="bg-white dark:bg-[#2A2A2A]"
+                    />
                   </div>
                 </div>
+
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div className="space-y-2">
-                    <label htmlFor="phone" className="text-sm font-medium">
-                      Phone Number
+                    <label htmlFor="project-type" className="text-sm font-medium">
+                      Project Type *
                     </label>
-                    <Input id="phone" placeholder="Your phone" className="bg-white dark:bg-[#2A2A2A]" />
+                    <select
+                      id="project-type"
+                      required
+                      className="w-full rounded-md border border-input bg-white dark:bg-[#2A2A2A] px-3 py-2 text-sm"
+                    >
+                      <option value="">Select project type</option>
+                      <option value="residential">Residential</option>
+                      <option value="office">Office/Commercial</option>
+                      <option value="retail">Retail/Storefront</option>
+                      <option value="hospitality">Hospitality</option>
+                      <option value="custom">Custom Project</option>
+                    </select>
                   </div>
                   <div className="space-y-2">
-                    <label htmlFor="company" className="text-sm font-medium">
-                      Company (Optional)
+                    <label htmlFor="location" className="text-sm font-medium">
+                      Location *
                     </label>
-                    <Input id="company" placeholder="Your company" className="bg-white dark:bg-[#2A2A2A]" />
+                    <Input id="location" placeholder="City, Country" required className="bg-white dark:bg-[#2A2A2A]" />
                   </div>
                 </div>
-                <div className="space-y-2">
-                  <label htmlFor="project-type" className="text-sm font-medium">
-                    Project Type
-                  </label>
-                  <select
-                    id="project-type"
-                    className="w-full rounded-md border border-input bg-white dark:bg-[#2A2A2A] px-3 py-2 text-sm"
-                  >
-                    <option value="">Select project type</option>
-                    <option value="residential">Residential</option>
-                    <option value="commercial">Commercial</option>
-                    <option value="hospitality">Hospitality</option>
-                    <option value="transportation">Transportation</option>
-                    <option value="other">Other</option>
-                  </select>
-                </div>
+
                 <div className="space-y-2">
                   <label htmlFor="message" className="text-sm font-medium">
                     Project Details
                   </label>
                   <Textarea
                     id="message"
-                    placeholder="Describe your project requirements"
+                    placeholder="Tell us about your project requirements, space dimensions, and vision..."
                     rows={5}
                     className="bg-white dark:bg-[#2A2A2A]"
                   />
                 </div>
-                <Button className="w-full bg-[#007BFF] hover:bg-[#007BFF]/90">Submit Inquiry</Button>
+
+                <Button className="w-full bg-[#007BFF] hover:bg-[#007BFF]/90">Submit Quote Request</Button>
               </form>
+
+              {/* WhatsApp Button */}
+              <div className="mt-6 pt-6 border-t border-gray-200 dark:border-gray-700">
+                <Button
+                  asChild
+                  className="w-full bg-[#25D366] hover:bg-[#25D366]/90 text-white"
+                  size="lg"
+                >
+                  <a
+                    href="https://wa.me/1234567890?text=Hi! I'm interested in SR Lumex LED film screens."
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <MessageCircle className="mr-2 h-5 w-5" />
+                    Chat on WhatsApp
+                  </a>
+                </Button>
+              </div>
             </div>
 
+            {/* Contact Information */}
             <div className="space-y-8">
+              {/* Contact Details */}
               <div className="bg-white dark:bg-[#1E1E1E] rounded-xl p-6 shadow-md">
-                <div className="flex items-start gap-4">
-                  <div className="h-12 w-12 rounded-full bg-[#007BFF]/10 dark:bg-[#007BFF]/20 flex items-center justify-center flex-shrink-0">
-                    <Phone className="h-6 w-6 text-[#007BFF]" />
+                <h3 className="text-xl font-bold text-[#121212] dark:text-white mb-6">Contact Information</h3>
+                <div className="space-y-4">
+                  <div className="flex items-start gap-4">
+                    <div className="h-12 w-12 rounded-full bg-[#007BFF]/10 dark:bg-[#007BFF]/20 flex items-center justify-center flex-shrink-0">
+                      <Phone className="h-6 w-6 text-[#007BFF]" />
+                    </div>
+                    <div>
+                      <h4 className="font-bold text-[#121212] dark:text-white">Phone</h4>
+                      <p className="text-muted-foreground">+92 300 1234567</p>
+                      <p className="text-muted-foreground">+92 21 1234567</p>
+                    </div>
                   </div>
-                  <div>
-                    <h4 className="text-lg font-bold text-[#121212] dark:text-white">Call Us Directly</h4>
-                    <p className="text-muted-foreground mt-1">
-                      Speak with a custom solutions specialist to discuss your project requirements.
-                    </p>
-                    <a href="tel:+15551234567" className="text-[#007BFF] font-medium block mt-2">
-                      +1 (555) 123-4567
-                    </a>
-                  </div>
-                </div>
-              </div>
 
-              <div className="bg-white dark:bg-[#1E1E1E] rounded-xl p-6 shadow-md">
-                <div className="flex items-start gap-4">
-                  <div className="h-12 w-12 rounded-full bg-[#007BFF]/10 dark:bg-[#007BFF]/20 flex items-center justify-center flex-shrink-0">
-                    <MessageSquare className="h-6 w-6 text-[#007BFF]" />
+                  <div className="flex items-start gap-4">
+                    <div className="h-12 w-12 rounded-full bg-[#007BFF]/10 dark:bg-[#007BFF]/20 flex items-center justify-center flex-shrink-0">
+                      <Mail className="h-6 w-6 text-[#007BFF]" />
+                    </div>
+                    <div>
+                      <h4 className="font-bold text-[#121212] dark:text-white">Email</h4>
+                      <p className="text-muted-foreground">info@srlumex.com</p>
+                      <p className="text-muted-foreground">sales@srlumex.com</p>
+                    </div>
                   </div>
-                  <div>
-                    <h4 className="text-lg font-bold text-[#121212] dark:text-white">Email Us</h4>
-                    <p className="text-muted-foreground mt-1">
-                      Send detailed project requirements directly to our custom solutions team.
-                    </p>
-                    <a href="mailto:custom@srlumex.com" className="text-[#007BFF] font-medium block mt-2">
-                      custom@srlumex.com
-                    </a>
-                  </div>
-                </div>
-              </div>
 
-              <div className="bg-white dark:bg-[#1E1E1E] rounded-xl p-6 shadow-md">
-                <div className="flex items-start gap-4">
-                  <div className="h-12 w-12 rounded-full bg-[#007BFF]/10 dark:bg-[#007BFF]/20 flex items-center justify-center flex-shrink-0">
-                    <FileText className="h-6 w-6 text-[#007BFF]" />
-                  </div>
-                  <div>
-                    <h4 className="text-lg font-bold text-[#121212] dark:text-white">Download Resources</h4>
-                    <p className="text-muted-foreground mt-1">
-                      Access technical specifications and case studies to help plan your custom project.
-                    </p>
-                    <div className="flex flex-col gap-2 mt-2">
-                      <a href="#" className="text-[#007BFF] font-medium flex items-center">
-                        Technical Specifications <ArrowRight className="ml-1 h-4 w-4" />
-                      </a>
-                      <a href="#" className="text-[#007BFF] font-medium flex items-center">
-                        Custom Project Portfolio <ArrowRight className="ml-1 h-4 w-4" />
-                      </a>
+                  <div className="flex items-start gap-4">
+                    <div className="h-12 w-12 rounded-full bg-[#007BFF]/10 dark:bg-[#007BFF]/20 flex items-center justify-center flex-shrink-0">
+                      <MapPin className="h-6 w-6 text-[#007BFF]" />
+                    </div>
+                    <div>
+                      <h4 className="font-bold text-[#121212] dark:text-white">Address</h4>
+                      <p className="text-muted-foreground">
+                        Office 123, Innovation Hub
+                        <br />
+                        Karachi, Pakistan
+                      </p>
                     </div>
                   </div>
                 </div>
+              </div>
+
+              {/* Business Hours */}
+              <div className="bg-white dark:bg-[#1E1E1E] rounded-xl p-6 shadow-md">
+                <h3 className="text-xl font-bold text-[#121212] dark:text-white mb-4">Business Hours</h3>
+                <div className="space-y-2">
+                  <div className="flex justify-between">
+                    <span className="text-muted-foreground">Monday - Friday</span>
+                    <span className="font-medium">9:00 AM - 6:00 PM</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-muted-foreground">Saturday</span>
+                    <span className="font-medium">10:00 AM - 4:00 PM</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-muted-foreground">Sunday</span>
+                    <span className="font-medium">Closed</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Quick Response */}
+              <div className="bg-[#007BFF]/10 dark:bg-[#007BFF]/20 rounded-xl p-6">
+                <h3 className="text-lg font-bold text-[#121212] dark:text-white mb-2">Quick Response Guarantee</h3>
+                <p className="text-muted-foreground">
+                  We respond to all inquiries within 24 hours. For urgent projects, call us directly or use WhatsApp for
+                  immediate assistance.
+                </p>
               </div>
             </div>
           </div>

@@ -4,9 +4,11 @@ const VideoHero = () => {
       <div className="absolute inset-0">
         <video
           src="/videos/renders.mp4"
+          preload="metadata"
           autoPlay
           loop
           muted
+          playsInline
           className="min-w-full min-h-full absolute object-cover"
         />
         <div className="absolute inset-0 bg-black opacity-40"></div>
