@@ -143,13 +143,13 @@ export default function Home() {
             </Link>
           </div>
 
-          <div className="flex justify-center mt-8 md:mt-12 px-4">
+          {/* <div className="flex justify-center mt-8 md:mt-12 px-4">
             <Button asChild className="bg-[#007BFF] hover:bg-[#007BFF]/90 text-white">
               <Link href="/solutions">
                 View all solutions <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
             </Button>
-          </div>
+          </div> */}
         </div>
       </section>
 

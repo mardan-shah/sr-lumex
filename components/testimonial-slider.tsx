@@ -13,21 +13,21 @@ const testimonials = [
       "SR Lumex smart glass transformed our office space, providing privacy when needed while maintaining an open, collaborative environment. The energy savings have been substantial.",
     author: "Sarah Johnson",
     position: "Facilities Director, TechCorp",
-    image: "/placeholder.svg?height=100&width=100&text=SJ",
+    image: "/images/avatar-female-1.svg",
   },
   {
     quote:
       "The installation was seamless and the results are stunning. Our clients are always impressed by the technology, and it's become a signature feature of our design studio.",
     author: "Michael Chen",
     position: "Principal Architect, Modern Design",
-    image: "/placeholder.svg?height=100&width=100&text=MC",
+    image: "/images/avatar-male-1.svg",
   },
   {
     quote:
       "As a luxury hotel, we needed a solution that offered both privacy and elegance. SR Lumex delivered on both fronts, and the integration with our smart room controls was flawless.",
     author: "Elena Rodriguez",
     position: "Operations Manager, Grand Plaza Hotel",
-    image: "/placeholder.svg?height=100&width=100&text=ER",
+    image: "/images/avatar-female-2.svg",
   },
 ]
 

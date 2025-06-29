@@ -82,7 +82,7 @@ export default function AboutPage() {
               <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-[#50C878]/10 rounded-full dark:bg-[#50C878]/20" />
               <div className="relative rounded-xl overflow-hidden shadow-lg">
                 <Image
-                  src="/placeholder.svg?height=600&width=800&text=Our%20Vision"
+                  src="/images/about1.jpg"
                   alt="SR Lumex Vision"
                   width={800}
                   height={600}
@@ -98,7 +98,7 @@ export default function AboutPage() {
               <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-[#50C878]/10 rounded-full dark:bg-[#50C878]/20" />
               <div className="relative rounded-xl overflow-hidden shadow-lg">
                 <Image
-                  src="/placeholder.svg?height=600&width=800&text=Our%20Mission"
+                  src="/images/about2.jpg"
                   alt="SR Lumex Mission"
                   width={800}
                   height={600}
@@ -181,25 +181,25 @@ export default function AboutPage() {
                 name: "Sarah Johnson",
                 role: "Founder & CEO",
                 bio: "Visionary leader with 15+ years in architectural innovation",
-                image: "/placeholder.svg?height=400&width=400&text=SJ",
+                image: "/images/avatar-female-1.svg",
               },
               {
                 name: "Michael Chen",
                 role: "CTO",
                 bio: "Engineering genius behind our proprietary PDLC technology",
-                image: "/placeholder.svg?height=400&width=400&text=MC",
+                image: "/images/avatar-male-1.svg",
               },
               {
                 name: "Elena Rodriguez",
                 role: "Head of Design",
                 bio: "Award-winning designer focused on aesthetic integration",
-                image: "/placeholder.svg?height=400&width=400&text=ER",
+                image: "/images/avatar-female-2.svg",
               },
               {
                 name: "David Kim",
                 role: "Operations Director",
                 bio: "Efficiency expert ensuring flawless product delivery",
-                image: "/placeholder.svg?height=400&width=400&text=DK",
+                image: "/images/avatar-male-2.svg",
               },
             ].map((member, index) => (
               <div
