@@ -173,7 +173,7 @@ export default function TechnologyPage() {
                 poster="/placeholder.svg?height=600&width=1000&text=LED%20Film%20Demo%20Video"
                 playsInline
                 muted
-                loop={false}
+                loop
                 preload="metadata"
                 className="w-full max-h-[600px] object-cover"
               />
