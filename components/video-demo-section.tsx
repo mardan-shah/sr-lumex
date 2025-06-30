@@ -17,17 +17,25 @@ export default function VideoDemoSection() {
       video.loop = true
       video.play().catch(() => {})
     }
+
+    const handleFullscreenChange = () => {
+      setIsFullscreen(!!document.fullscreenElement)
+    }
+
+    document.addEventListener("fullscreenchange", handleFullscreenChange)
+    return () => {
+      document.removeEventListener("fullscreenchange", handleFullscreenChange)
+    }
   }, [])
 
   const toggleFullscreen = () => {
     const el = containerRef.current
     if (!el) return
+
     if (!document.fullscreenElement) {
       el.requestFullscreen()
-      setIsFullscreen(true)
     } else {
       document.exitFullscreen()
-      setIsFullscreen(false)
     }
   }
 
@@ -62,9 +70,12 @@ export default function VideoDemoSection() {
               className="absolute inset-0 object-cover w-full h-full"
               src="/videos/home-demo.mp4"
               playsInline
+              loop
+              muted={isMuted}
             />
             <div className="absolute inset-0 bg-gradient-to-br from-[#007BFF]/20 to-[#50C878]/20" />
-            <div className={`absolute inset-0 flex items-center justify-center ${isFullscreen && "hidden"}`}>
+
+            <div className={`absolute inset-0 flex items-center justify-center ${isFullscreen ? "hidden" : ""}`}>
               <Button
                 size="lg"
                 className="bg-white/20 hover:bg-white/30 backdrop-blur-sm border border-white/30 pointer-events-none"
@@ -73,21 +84,27 @@ export default function VideoDemoSection() {
                 Watch Demo
               </Button>
             </div>
+
             <div className="absolute bottom-4 left-4 text-white">
               <p className="text-sm opacity-80">LED Film Transformation Demo</p>
             </div>
 
             {/* Mute toggle button in fullscreen */}
-            <button
-              onClick={(e) => {
-                e.stopPropagation()
-                toggleMute()
-              }}
-              className="absolute bottom-4 right-4 bg-white/30 hover:bg-white/50 rounded-full p-2 flex items-center justify-center"
-              style={{ display: document.fullscreenElement ? "flex" : "none" }}
-            >
-              {isMuted ? <VolumeX className="h-6 w-6 text-black" /> : <Volume2 className="h-6 w-6 text-black" />}
-            </button>
+            {isFullscreen && (
+              <button
+                onClick={(e) => {
+                  e.stopPropagation()
+                  toggleMute()
+                }}
+                className="absolute bottom-4 right-4 bg-white/30 hover:bg-white/50 rounded-full p-2 flex items-center justify-center"
+              >
+                {isMuted ? (
+                  <VolumeX className="h-6 w-6 text-black" />
+                ) : (
+                  <Volume2 className="h-6 w-6 text-black" />
+                )}
+              </button>
+            )}
           </div>
         </div>
       </div>

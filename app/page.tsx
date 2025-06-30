@@ -9,19 +9,21 @@ import ProductShowcase3D from "@/components/product-showcase-3d"
 import VideoDemoSection from "@/components/video-demo-section"
 import ObjectivesSection from "@/components/objectives-section"
 import ProductFeatures from "@/components/product-features"
+
+
 import { Badge } from "@/components/ui/badge"
 
 export default function Home() {
   return (
     <div className="flex min-h-screen flex-col">
       {/* Hero Section */}
-      <VideoHero />
+      <VideoHero /> 
 
       {/* What is SR Lumex Section */}
       <section className="bg-white dark:bg-gray-950 py-16 md:py-24">
         <div className="container space-y-8 md:space-y-12">
           <div className="text-center space-y-4">
-            <Badge className="bg-[#007BFF] hover:bg-[#007BFF]/90 text-white">Innovative Technology</Badge>
+            <Badge className="bg-[#454545] hover:bg-[#007BFF]/90 text-white">Innovative Technology</Badge>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#121212] dark:text-white">
               What is SR Lumex?
             </h2>

@@ -1,10 +1,10 @@
+'use client'
 const VideoHero = () => {
   return (
     <section className="relative bg-black overflow-hidden">
       <div className="absolute inset-0">
         <video
           src="/videos/renders.mp4"
-          preload="metadata"
           autoPlay
           loop
           muted

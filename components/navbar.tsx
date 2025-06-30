@@ -15,6 +15,9 @@ export default function Navbar() {
   const [isHomePage, setIsHomePage] = useState(true)
 
   useEffect(() => {
+    // Add this check
+    if (typeof window === 'undefined') return
+
     const handleScroll = () => {
       if (window.scrollY > 10) {
         setIsScrolled(true)
