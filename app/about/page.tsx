@@ -164,7 +164,7 @@ export default function AboutPage() {
       </section>
 
       {/* Team Section (Optional) */}
-      <section className="py-20">
+      {/* <section className="py-20">
         <div className="container">
           <div className="text-center space-y-4 mb-16">
             <Badge className="bg-[#007BFF] hover:bg-[#007BFF]/90">Our Team</Badge>
@@ -224,7 +224,7 @@ export default function AboutPage() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Milestones Section */}
       <section className="py-20 bg-[#ECECEC] dark:bg-[#121212]/80">

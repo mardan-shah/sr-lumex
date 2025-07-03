@@ -68,7 +68,7 @@ export default function VideoDemoSection() {
             <video
               ref={videoRef}
               className="absolute inset-0 object-cover w-full h-full"
-              src="/videos/home-demo.mp4"
+              src="/videos/demo.mp4"
               playsInline
               loop
               muted={isMuted}
