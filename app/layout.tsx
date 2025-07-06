@@ -18,6 +18,9 @@ export const metadata: Metadata = {
     shortcut: "/favicon_io/favicon.ico",
     apple: "/favicon_io/apple-touch-icon.png",
   },
+   other: {
+    preloadVideo: `<link rel="preload" as="video" href="/videos/renders.mp4" type="video/mp4" />`,
+  },
 }
 
 
@@ -32,6 +35,7 @@ export default function RootLayout({
 }) {
   return (
      <html lang="en" suppressHydrationWarning>
+      <head dangerouslySetInnerHTML={{ __html: metadata.other?.preloadVideo || "" }} />
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
           <Navbar />

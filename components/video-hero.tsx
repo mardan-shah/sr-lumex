@@ -11,6 +11,7 @@ const VideoHero = () => {
           autoPlay
           loop
           muted
+          preload="auto"
           playsInline
           className="min-w-full min-h-full absolute object-cover"
         />
