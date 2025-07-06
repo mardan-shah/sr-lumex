@@ -1,4 +1,7 @@
 'use client'
+
+import Link from "next/link"
+
 const VideoHero = () => {
   return (
     <section className="relative bg-black overflow-hidden">
@@ -18,12 +21,12 @@ const VideoHero = () => {
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">
           Transforming Spaces with Transparent LED Film
         </h1>
-        <a
-          href="#contact"
+        <Link
+          href="/contact"
           className="inline-block bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-8"
         >
           Request a Quote
-        </a>
+        </Link>
       </div>
 
     </section>

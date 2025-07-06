@@ -3,6 +3,7 @@ import { ArrowRight, Check } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
+import CTA from "@/components/CTA"
 
 export default function OfficePage() {
   return (
@@ -187,7 +188,7 @@ export default function OfficePage() {
                   alt="Before: Traditional Office"
                   width={800}
                   height={600}
-                  className="w-full h-auto"
+                  className="w-full max-h-[500px] object-cover"
                 />
                 <div className="absolute top-4 left-4 bg-white dark:bg-[#121212] px-4 py-2 rounded-md font-bold">
                   Before
@@ -204,7 +205,7 @@ export default function OfficePage() {
                   alt="After: Smart Glass Office"
                   width={800}
                   height={600}
-                  className="w-full h-auto"
+                  className="w-full max-h-[500px] object-cover"
                 />
                 <div className="absolute top-4 left-4 bg-[#007BFF] px-4 py-2 rounded-md font-bold text-white">
                   After
@@ -359,7 +360,7 @@ export default function OfficePage() {
                   alt="Building Management Integration"
                   width={800}
                   height={600}
-                  className="w-full h-auto"
+                  className="w-full max-h-[500px] object-cover"
                 />
               </div>
             </div>
@@ -368,7 +369,7 @@ export default function OfficePage() {
       </section>
 
       {/* Testimonials Section */}
-      <section className="py-20 bg-[#ECECEC] dark:bg-[#121212]/80">
+      {/* <section className="py-20 bg-[#ECECEC] dark:bg-[#121212]/80">
         <div className="container">
           <div className="text-center space-y-4 mb-16">
             <Badge className="bg-[#007BFF] hover:bg-[#007BFF]/90">Client Stories</Badge>
@@ -424,29 +425,10 @@ export default function OfficePage() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* CTA Section */}
-      <section className="py-20 bg-[#121212] text-white">
-        <div className="container">
-          <div className="max-w-4xl mx-auto text-center space-y-8">
-            <Badge className="bg-[#007BFF] hover:bg-[#007BFF]/90">Get Started</Badge>
-            <h2 className="text-4xl md:text-5xl font-bold">Ready to Transform Your Workspace?</h2>
-            <p className="text-lg text-gray-300 max-w-2xl mx-auto">
-              Experience the future of office design with SR Lumex. Schedule a consultation with our experts to discover
-              the perfect smart glass solution for your business.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
-              <Button size="lg" className="bg-[#007BFF] hover:bg-[#007BFF]/90">
-                Request a Quote <ArrowRight className="ml-2 h-4 w-4" />
-              </Button>
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
-                View Office Gallery
-              </Button>
-            </div>
-          </div>
-        </div>
-      </section>
+     <CTA />
     </div>
   )
 }

@@ -4,6 +4,7 @@ import { ArrowRight } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
+import CTA from "@/components/CTA"
 
 export default function ProjectsPage() {
   return (
@@ -246,27 +247,7 @@ export default function ProjectsPage() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-20 bg-[#121212] text-white">
-        <div className="container">
-          <div className="max-w-4xl mx-auto text-center space-y-8">
-            <Badge className="bg-[#007BFF] hover:bg-[#007BFF]/90">Start Your Project</Badge>
-            <h2 className="text-4xl md:text-5xl font-bold">Ready to Create Your Success Story?</h2>
-            <p className="text-lg text-gray-300 max-w-2xl mx-auto">
-              Join our portfolio of successful projects. Contact our team to discuss how SR Lumex smart glass can
-              transform your space.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
-              <Button size="lg" className="bg-[#007BFF] hover:bg-[#007BFF]/90">
-                Request a Consultation
-              </Button>
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
-                Download Project Catalog
-              </Button>
-            </div>
-          </div>
-        </div>
-      </section>
+     <CTA />
     </div>
   )
 }

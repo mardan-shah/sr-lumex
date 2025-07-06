@@ -12,6 +12,7 @@ import ProductFeatures from "@/components/product-features"
 
 
 import { Badge } from "@/components/ui/badge"
+import CTA from "@/components/CTA"
 
 export default function Home() {
   return (
@@ -176,32 +177,7 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="bg-[#121212] dark:bg-gray-950 text-white py-16 md:py-24">
-        <div className="container px-4">
-          <div className="max-w-4xl mx-auto text-center space-y-6 md:space-y-8">
-            <Badge className="bg-[#50C878] hover:bg-[#50C878]/90 text-white">Get Started</Badge>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold">
-              Ready to transform your glass into smart displays?
-            </h2>
-            <p className="text-base md:text-lg text-gray-300 max-w-2xl mx-auto">
-              Experience the future of architectural glass with SR Lumex. Schedule a consultation with our experts to
-              discover the perfect smart glass solution for your project.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
-              <Button size="lg" className="bg-[#007BFF] hover:bg-[#007BFF]/90 text-white">
-                Request a Demo
-              </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                className="border-white text-white hover:bg-white hover:text-black transition-colors"
-              >
-                Contact Sales
-              </Button>
-            </div>
-          </div>
-        </div>
-      </section>
+      <CTA  />
     </div>
   )
 }

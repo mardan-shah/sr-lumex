@@ -6,6 +6,7 @@ import { useRef, useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
+import CTA from "@/components/CTA"
 
 export default function TechnologyPage() {
   const videoRef = useRef<HTMLVideoElement>(null)
@@ -134,11 +135,11 @@ export default function TechnologyPage() {
               <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-[#50C878]/10 rounded-full dark:bg-[#50C878]/20" />
               <div className="relative rounded-xl overflow-hidden shadow-lg">
                 <Image
-                  src="/placeholder.svg?height=600&width=800&text=LED%20Film%20Technology"
+                  src="/images/tech.jpg"
                   alt="LED Film Technology"
                   width={800}
                   height={600}
-                  className="w-full h-auto"
+                  className="w-full max-h-[500px] object-cover"
                 />
               </div>
             </div>
@@ -147,7 +148,7 @@ export default function TechnologyPage() {
       </section>
 
       {/* Animation Demo Section */}
-      <section className="py-20 bg-gray-50 dark:bg-gray-900">
+      {/* <section className="py-20 bg-gray-50 dark:bg-gray-900">
         <div className="container px-4">
           <div className="text-center space-y-4 mb-12">
             <Badge className="bg-[#007BFF] hover:bg-[#007BFF]/90 text-white">
@@ -197,7 +198,7 @@ export default function TechnologyPage() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* FAQs Section */}
       <section className="py-20 bg-white dark:bg-gray-950">
@@ -278,27 +279,7 @@ export default function TechnologyPage() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-20 bg-[#121212] text-white">
-        <div className="container px-4">
-          <div className="max-w-4xl mx-auto text-center space-y-8">
-            <Badge className="bg-[#007BFF] hover:bg-[#007BFF]/90 text-white">Get Started</Badge>
-            <h2 className="text-4xl md:text-5xl font-bold">Ready to Experience LED Film Technology?</h2>
-            <p className="text-lg text-gray-300 max-w-2xl mx-auto">
-              Transform your space with SR Lumex LED film technology. Contact our team to discuss your project
-              requirements and discover the perfect solution.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
-              <Button size="lg" className="bg-[#007BFF] hover:bg-[#007BFF]/90 text-white">
-                Request a Demo
-              </Button>
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
-                Download Brochure
-              </Button>
-            </div>
-          </div>
-        </div>
-      </section>
+     <CTA />
     </div>
   )
 }

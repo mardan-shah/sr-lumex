@@ -4,6 +4,7 @@ import { ArrowRight, CheckCircle, Award, Leaf } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
+import CTA from "@/components/CTA"
 
 export default function AboutPage() {
   return (
@@ -164,6 +165,7 @@ export default function AboutPage() {
       </section>
 
       {/* Team Section (Optional) */}
+
       {/* <section className="py-20">
         <div className="container">
           <div className="text-center space-y-4 mb-16">
@@ -416,7 +418,7 @@ export default function AboutPage() {
 
               <div className="pt-4">
                 <Button asChild className="bg-[#50C878] hover:bg-[#50C878]/90">
-                  <Link href="/sustainability">
+                  <Link href="/contact">
                     Learn more about our sustainability initiatives <ArrowRight className="ml-2 h-4 w-4" />
                   </Link>
                 </Button>
@@ -427,7 +429,7 @@ export default function AboutPage() {
               <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-[#50C878]/20 rounded-full" />
               <div className="relative rounded-xl overflow-hidden shadow-lg">
                 <Image
-                  src="/placeholder.svg?height=600&width=800&text=Sustainability"
+                  src="/images/eco-glass.png"
                   alt="SR Lumex Sustainability"
                   width={800}
                   height={600}
@@ -440,7 +442,7 @@ export default function AboutPage() {
       </section>
 
       {/* Brand Video Section */}
-      <section className="py-20">
+      {/* <section className="py-20">
         <div className="container">
           <div className="text-center space-y-4 mb-12">
             <Badge className="bg-[#007BFF] hover:bg-[#007BFF]/90">Our Story</Badge>
@@ -487,29 +489,8 @@ export default function AboutPage() {
             <p className="mt-4 font-bold">Sarah Johnson, Founder & CEO</p>
           </div>
         </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="py-20 bg-[#121212] text-white">
-        <div className="container">
-          <div className="max-w-4xl mx-auto text-center space-y-8">
-            <Badge className="bg-[#007BFF] hover:bg-[#007BFF]/90">Join Our Journey</Badge>
-            <h2 className="text-4xl md:text-5xl font-bold">Ready to Transform Your Space?</h2>
-            <p className="text-lg text-gray-300 max-w-2xl mx-auto">
-              Experience the future of architectural glass with SR Lumex. Schedule a consultation with our experts to
-              discover the perfect smart glass solution for your project.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
-              <Button size="lg" className="bg-[#007BFF] hover:bg-[#007BFF]/90">
-                Request a Demo
-              </Button>
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
-                Contact Sales
-              </Button>
-            </div>
-          </div>
-        </div>
-      </section>
+      </section> */}
+      <CTA />
     </div>
   )
 }
