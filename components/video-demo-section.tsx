@@ -64,15 +64,14 @@ export default function VideoDemoSection() {
             onMouseEnter={() => setShowControls(true)}
             onMouseLeave={() => setShowControls(false)}
           >
-            <ReactPlayer
+            <video
               ref={playerRef}
               src="/videos/demo.mp4"
-              playing={isPlaying}
-              loop
+              autoPlay={isPlaying}
               muted={isMuted}
-              width="100%"
-              height="100%"
-              style={{ position: 'absolute', top: 0, left: 0 }}
+              loop
+              playsInline
+              className="absolute top-0 left-0 w-full h-full object-cover"
             />
             
             <div className="absolute inset-0 bg-gradient-to-br from-[#007BFF]/20 to-[#50C878]/20 pointer-events-none" />

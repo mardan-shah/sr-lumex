@@ -9,6 +9,7 @@ import ProductShowcase3D from "@/components/product-showcase-3d"
 import VideoDemoSection from "@/components/video-demo-section"
 import ObjectivesSection from "@/components/objectives-section"
 import ProductFeatures from "@/components/product-features"
+import PageWrapper from "@/components/PageWrapper"
 
 
 import { Badge } from "@/components/ui/badge"
@@ -16,7 +17,8 @@ import CTA from "@/components/CTA"
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen flex-col">
+    <PageWrapper>
+      <div className="flex min-h-screen flex-col">
       {/* Hero Section */}
       <VideoHero /> 
 
@@ -179,5 +181,6 @@ export default function Home() {
       {/* CTA Section */}
       <CTA  />
     </div>
+    </PageWrapper>
   )
 }

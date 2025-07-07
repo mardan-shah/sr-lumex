@@ -29,7 +29,7 @@ export default function Contact() {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
-        to: "alimardan.shaa@gmail.com",
+        to: "info@srlumex.com",
         subject: "SR Lumex: New Quote Request",
         text: `New quote request from ${form.name} (${form.email})\n\nProject Type: ${form.projectType}\nLocation: ${form.location}\n\nMessage:\n${form.message}`,
       }),

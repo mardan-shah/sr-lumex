@@ -6,8 +6,6 @@ import Navbar from "@/components/navbar"
 import { ThemeProvider } from "@/components/theme-provider"
 import Footer from "@/components/Footer"
 const inter = Inter({ subsets: ["latin"] })
-import PageLoader from "@/components/PageLoader"
-import { Suspense } from "react"
 
 export const metadata: Metadata = {
   title: "SR Lumex",
@@ -18,11 +16,7 @@ export const metadata: Metadata = {
     shortcut: "/favicon_io/favicon.ico",
     apple: "/favicon_io/apple-touch-icon.png",
   },
-   other: {
-    preloadVideo: `<link rel="preload" as="video" href="/videos/renders.mp4" type="video/mp4" />`,
-  },
 }
-
 
 export const viewport: Viewport = {
   themeColor: "#007BFF",
@@ -34,16 +28,11 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-     <html lang="en" suppressHydrationWarning>
-      <head dangerouslySetInnerHTML={{ __html: metadata.other?.preloadVideo || "" }} />
+    <html lang="en">
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
           <Navbar />
-          <main>
-            <Suspense fallback={<PageLoader />}>
-              {children}
-            </Suspense>
-          </main>
+          <main>{children}</main>
           <Footer />
         </ThemeProvider>
       </body>
