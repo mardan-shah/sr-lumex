@@ -35,7 +35,6 @@ export default function TechnologyPage() {
     }
   }
   return (
-    <PageWrapper>
       <div className="flex min-h-screen flex-col">
         {/* Hero Section */}
         <section className="relative py-20 md:py-28 h-screen overflow-hidden bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800">
@@ -284,6 +283,5 @@ export default function TechnologyPage() {
 
       <CTA />
       </div>
-    </PageWrapper>
   )
 }

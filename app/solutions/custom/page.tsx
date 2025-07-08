@@ -11,7 +11,6 @@ import PageWrapper from "@/components/PageWrapper"
 
 export default function CustomPage() {
   return (
-    <PageWrapper>
       <div className="flex min-h-screen flex-col">
         {/* Hero Section */}
         <section className="relative py-20 md:py-28">
@@ -217,7 +216,7 @@ export default function CustomPage() {
                       alt={project.title}
                       width={600}
                       height={400}
-                      className="w-full h-full object-cover"
+                      className="w-full max-h-[500px] object-cover"
                     />
                   </div>
                   <div className="p-6">
@@ -338,6 +337,5 @@ export default function CustomPage() {
         {/* Contact Form Section */}
         <Contact />
       </div>
-    </PageWrapper>
   )
 }

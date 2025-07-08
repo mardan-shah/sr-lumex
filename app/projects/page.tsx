@@ -9,7 +9,6 @@ import PageWrapper from "@/components/PageWrapper"
 
 export default function ProjectsPage() {
   return (
-    <PageWrapper> 
       <div className="flex min-h-screen flex-col">
         {/* Hero Section */}
         <section className="relative py-20 md:py-28 bg-[#ECECEC] dark:bg-[#121212]/80">
@@ -251,6 +250,5 @@ export default function ProjectsPage() {
 
       <CTA />
       </div>
-    </PageWrapper>
   )
 }

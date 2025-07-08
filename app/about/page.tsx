@@ -5,11 +5,9 @@ import { ArrowRight, CheckCircle, Award, Leaf } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import CTA from "@/components/CTA"
-import PageWrapper from "@/components/PageWrapper"
 
 export default function AboutPage() {
   return (
-    <PageWrapper> 
       <div className="flex min-h-screen flex-col">
         {/* Hero Section */}
         <section className="relative py-20 md:py-28 bg-[#ECECEC] dark:bg-[#121212]/80">
@@ -89,7 +87,7 @@ export default function AboutPage() {
                     alt="SR Lumex Vision"
                     width={800}
                     height={600}
-                    className="w-full h-auto"
+                    className="w-full max-h-[500px] object-cover"
                   />
                 </div>
               </div>
@@ -105,7 +103,7 @@ export default function AboutPage() {
                     alt="SR Lumex Mission"
                     width={800}
                     height={600}
-                    className="w-full h-auto"
+                    className="w-full max-h-[500px] object-cover"
                   />
                 </div>
               </div>
@@ -435,7 +433,7 @@ export default function AboutPage() {
                     alt="SR Lumex Sustainability"
                     width={800}
                     height={600}
-                    className="w-full h-auto"
+                    className="w-full max-h-[500px] object-cover"
                   />
                 </div>
               </div>
@@ -494,6 +492,5 @@ export default function AboutPage() {
         </section> */}
         <CTA />
       </div>
-    </PageWrapper>
   )
 }

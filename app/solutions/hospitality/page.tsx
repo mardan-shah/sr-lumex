@@ -8,7 +8,7 @@ import PageWrapper from "@/components/PageWrapper"
 
 export default function HospitalityPage() {
   return (
-    <PageWrapper>
+
       <div className="flex min-h-screen flex-col">
         {/* Hero Section */}
         <section className="relative py-20 md:py-28">
@@ -434,6 +434,5 @@ export default function HospitalityPage() {
         {/* CTA Section */}
         <CTA />
       </div>
-    </PageWrapper>
   )
 }

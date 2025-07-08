@@ -6,13 +6,11 @@ import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import CTA from "@/components/CTA"
 import Contact from "@/components/Contact"
-import PageWrapper from "@/components/PageWrapper"
 
 export default function ContactPage() {
  
 
   return (
-    <PageWrapper>
       <div className="flex min-h-screen flex-col">
         {/* Hero Section */}
         <section className="relative py-20 md:py-28 bg-[#ECECEC] dark:bg-[#121212]/80">
@@ -60,6 +58,5 @@ export default function ContactPage() {
 
         <CTA />
       </div>
-    </PageWrapper>
   )
 }

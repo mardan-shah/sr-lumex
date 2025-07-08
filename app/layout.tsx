@@ -8,8 +8,8 @@ import Footer from "@/components/Footer"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "SR Lumex",
-  description: "Transform your space with intelligent LED film screen technology",
+  title: "SR Lumex – Transparent LED Display Glass & Smart Architectural Screens",
+  description: "R Lumex pioneers transparent LED technology by embedding ultra-thin display films directly into glass surfaces. From residential interiors to office partitions and retail storefronts, our cutting-edge solutions transform ordinary glass into sleek, dynamic displays—blending digital visuals with modern architectural aesthetics.",
   generator: "v0.dev",
   icons: {
     icon: "/favicon_io/favicon.ico",
