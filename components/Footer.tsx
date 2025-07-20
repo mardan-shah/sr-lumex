@@ -103,8 +103,8 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Contact</h3>
             <address className="not-italic text-gray-400">
-              <p>Office 123, Innovation Hub</p>
-              <p>Karachi, Pakistan</p>
+              <p>DHA phase 6 CCA plaza 18</p>
+              <p>Lahore, Pakistan</p>
               <p className="mt-2">info@srlumex.com</p>
               <p>sales@srlumex.com</p>
               <p className="mt-2">+92 300 1234567</p>

@@ -177,9 +177,9 @@ export default function Contact() {
                   <div>
                     <h4 className="font-bold text-[#121212] dark:text-white">Address</h4>
                     <p className="text-muted-foreground">
-                      Office 123, Innovation Hub
+                      DHA phase 6 CCA plaza 18
                       <br />
-                      Karachi, Pakistan
+                      Lahore, Pakistan
                     </p>
                   </div>
                 </div>
