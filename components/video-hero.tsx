@@ -1,5 +1,3 @@
-'use client'
-
 import Link from "next/link"
 
 const VideoHero = () => {
@@ -7,11 +5,11 @@ const VideoHero = () => {
     <section className="relative bg-black overflow-hidden">
       <div className="absolute inset-0">
         <video
-          src="/videos/renders.mp4"
+          src="/videos/BackgroundHero.mp4"
           autoPlay
           loop
           muted
-          preload="auto"
+          preload="metadata"
           playsInline
           className="min-w-full min-h-full absolute object-cover"
         />
