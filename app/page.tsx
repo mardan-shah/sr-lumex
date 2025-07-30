@@ -60,10 +60,10 @@ export default function Home() {
         </section>
 
         {/* 3D Product Showcase  */}
-        <section className="bg-gray-50 dark:bg-gray-900">
+        {/* <section className="bg-gray-50 dark:bg-gray-900">
           <ProductShowcase3D />
         </section>
-       
+        */}
 
         {/* Applications Section */}
         <section className="bg-white dark:bg-gray-950 py-16 md:py-24">
