@@ -46,7 +46,7 @@ export default function ContactPage() {
               <div className="h-96 bg-gray-200 dark:bg-gray-800">
                 <iframe
                   className="w-full h-full"
-                  src="https://www.google.com/maps?q=Office+123,+Innovation+Hub,+Karachi,+Pakistan&output=embed"
+                  src="https://maps.google.com/maps?q=31.4695816040039,74.4500503540039&z=15&output=embed"
                   allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"

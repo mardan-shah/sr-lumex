@@ -132,7 +132,7 @@ export default function Contact() {
                 size="lg"
               >
                 <a
-                  href="https://wa.me/+923001234567?text=Hi! I'm interested in SR Lumex LED film screens."
+                  href="https://wa.me/+923134836912?text=Hi! I'm interested in SR Lumex LED film screens."
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -154,8 +154,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h4 className="font-bold text-[#121212] dark:text-white">Phone</h4>
-                    <p className="text-muted-foreground">+92 300 1234567</p>
-                    <p className="text-muted-foreground">+92 21 1234567</p>
+                    <p className="text-muted-foreground">+92 313 4836912</p>
                   </div>
                 </div>
 
